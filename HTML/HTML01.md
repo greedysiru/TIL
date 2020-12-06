@@ -12,6 +12,12 @@ HTML(Hyper Text Markup Language)는 웹 페이지를 만드는데 기초적인 �
   1. 쉽다.
   1. 중요하다.
   1. Public domain
-
+  
+## * 사용 에디터  
+[아톰](https://opentutorials.org/course/3084)  
+  
+## * 태그 문법
+HTML이 사용하는 문법은 태그 문법이다. 틀은 아래와 같다.  
+> <태그>  적용할 텍스트  </태그>
  
 
