@@ -1,7 +1,5 @@
 # [생활코딩] WEB2-CSS (2020.11.30~12.1)  
-  
-**본 내용은 [링크](https://opentutorials.org/course/3086)**  
-  
+
 **상세 내용 [블로그](https://greedysiru.tistory.com/4?category=860706)**
   
 * ## CSS  
@@ -41,7 +39,6 @@ id,class,tag
     >블록: 태그 부변만 적용
 
 * ## 박스 모델
-<a href="#"><img src="https://www.dummies.com/wp-content/uploads/415895.image0.jpg">
-
+![Boxmodel](/ETC/images/Boxmodel.jpg)
 
     
