@@ -23,16 +23,45 @@ HTML이 사용하는 문법은 태그 문법이다. 틀은 아래와 같다.
 ## * 태그의 속성  
 속성 값을 가지는 태그들이 있다.  
 > <img src=“1. jpg” width=“100%”>   
-> 예시의 src는 파일명, width는 적용할 크기이다.  
+> <a href="주소" target="_blank" title="이름"> 내용 </a>  
   
 ## * 태그의 포함관계  
 특정 태그 아래에 종속적으로 포함되는 태그가 있다.
 ```html
 <ul> 리스트
-<li>1</li>
-<li>2</li>
-<li>3</li>
+<li>리</li>
+<li>스</li>
+<li>트</li>
 </ul>
 ```
+  
+## * 필수 태그  
+  HTML을 사용할 때, 반드시 아래의 태그들을 써야한다.  
+'''html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    
+  </body>
+</html>
+```
+   
+## * 배운 태그 정리  
+  1. `<strong></strong>` : 진하게  
+  1. `<u></u>` : 밑줄  
+  1. `<br>` : 줄 바꾸기, 닫는 태그 없음  
+  1. `<p></p>` : 단락  
+  1. `<img src=“1. jpg” width=“100%”>` : 이미지 삽입  
+  1. `<ul></ul>` : 순서없는 리스트  
+  1. `<ol></ol>` : 순서 리스트  
+  1. `<li></li>` : 리스트 종속 태그  
+  1. `<title></title>` : 웹 페이지 타이틀
+
+
+
 
 
