@@ -40,5 +40,15 @@ id,class,tag
 
 * ## 박스 모델
 ![Boxmodel](/ETC/images/Boxmodel.jpg)
+웹 브라우저의 소스보기 기능으로 해당하는 부분의 속성을 조절할 수 있다.
 
-    
+* ## 코드 줄이기
+```css
+h1, a {border-width:5px;border-color:red;border-style: solid}
+```
+선택자는 컴마로 구분, 속성은 세미콜론
+
+
+
+# Reference
+https://www.dummies.com/web-design-development/site-development/how-to-work-with-the-basic-box-model-in-css3/
