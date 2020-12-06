@@ -46,7 +46,59 @@ id,class,tag
 ```css
 h1, a {border-width:5px;border-color:red;border-style: solid}
 ```
-선택자는 컴마로 구분, 속성은 세미콜론
+선택자는 컴마, 속성은 세미콜론으로 줄인다.
+
+* ## 그리드
+```html
+<head>
+    <style>
+        #grid{ 
+            display: grid; grid-template-columns: 150px 1fr; 
+            }
+    </style>
+</head>
+ 
+<body>
+ 
+<div id="grid">
+
+그리드
+
+<div id="article">
+
+그리드
+
+</div>
+
+</div>
+
+ 
+</body>
+```
+* ## 미디어 쿼리
+사용자의 환경에 상호작용 가능
+```css
+@media(min-width:800px) {
+        div{
+          display:none;
+        }
+        }
+```
+`@media`뒤의 괄호는 조건 `{}`에는 출력을 쓴다.
+* ## CSS 링크하기
+확장자가 .css인 파일을 만들고 링크할 수 있다.
+```html
+<link rel="stylesheet" href="style.css">
+```
+* ## 명령어 정리
+  1.`<font color="red"></font>` : 폰트 색상  
+  1.`<!-- -->` : 주석  
+  1.`<style></style>` : CSS 태그  
+  1.`{color:red}` : 색상  
+  1.`{text-decoration: none;}` : 글자 효괴 지우기, -underline: 및줄  
+  1.`{border-width:5px}` : 경계선  
+  1. `*/ */` : css 주석
+
 
 
 
