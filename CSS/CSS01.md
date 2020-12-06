@@ -39,7 +39,7 @@ id,class,tag
     >블록: 태그 부변만 적용
 
 * ## 박스 모델
-![Boxmodel](/ETC/images/Boxmodel.jpg)
+![Boxmodel](/ETC/images/Boxmodel.jpg)  
 웹 브라우저의 소스보기 기능으로 해당하는 부분의 속성을 조절할 수 있다.
 
 * ## 코드 줄이기
