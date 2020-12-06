@@ -2,7 +2,7 @@
   
 **본 내용은 [링크](https://opentutorials.org/course/3086)**  
   
-**상세 내용 [블로그](https://greedysiru.tistory.com/4?category=860706)  
+**상세 내용 [블로그](https://greedysiru.tistory.com/4?category=860706)**
   
 * ## CSS  
 HTML의 태그 문법의 비효율과 디자인 요소의 부족으로 CSS(Cascading Style Sheets)등장

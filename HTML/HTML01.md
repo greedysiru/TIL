@@ -1,7 +1,5 @@
 # [생활코딩] WEB1-HTML & Internet(2020.11.28~29)
-    
-**본 내용은 [링크](https://opentutorials.org/course/3084)를 토대로 작성**  
-  
+
 **상세 내용 [블로그](https://greedysiru.tistory.com/3) 참조  
    
 * ## HTML  
@@ -62,6 +60,8 @@ HTML이 사용하는 문법은 태그 문법이다. 틀은 아래와 같다.
   1. `<title></title>` : 웹 페이지 제목  
   1. `<a></a>` : 하이퍼링크
 
+#Reference
+https://opentutorials.org/course/3084
 
 
 
