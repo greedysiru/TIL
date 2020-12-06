@@ -9,7 +9,7 @@ HTML의 태그 문법의 비효율과 디자인 요소의 부족으로 CSS(Casca
   > 반복작업의 효율성  
 * ## CSS 문법
   1. `<head></head>` 사이에 `<style></style>`입력  
-  1. `<style></style>` 사이에 입력
+  2. `<style></style>` 사이에 입력
     ```html
     <head>
         <style>
@@ -19,7 +19,7 @@ HTML의 태그 문법의 비효율과 디자인 요소의 부족으로 CSS(Casca
         </style>
     <head>
     ```  
-  1. a는 선택자, color:red는 효과(선언)  
+  3. a는 선택자, color:red는 효과(선언)  
 * ## 선택자의 지정  
 ```html
 <a href="링크" id="active"> 내용 </a>
