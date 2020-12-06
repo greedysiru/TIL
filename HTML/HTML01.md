@@ -19,9 +19,10 @@ HTML이 사용하는 문법은 태그 문법이다. 틀은 아래와 같다.
   
 ## * 태그의 속성  
 속성 값을 가지는 태그들이 있다.  
-> <img src=“1. jpg” width=“100%”>   
-> <a href="주소" target="_blank" title="이름"> 내용 </a>  
-  
+```html
+<img src=“1. jpg” width=“100%”>   
+<a href="주소" target="_blank" title="이름"> 내용 </a>  
+```
 ## * 태그의 포함관계  
 특정 태그 아래에 종속적으로 포함되는 태그가 있다.
 ```html
