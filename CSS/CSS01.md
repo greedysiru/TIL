@@ -91,12 +91,12 @@ h1, a {border-width:5px;border-color:red;border-style: solid}
 <link rel="stylesheet" href="style.css">
 ```
 * ## 명령어 정리
-  1.`<font color="red"></font>` : 폰트 색상  
-  1.`<!-- -->` : 주석  
-  1.`<style></style>` : CSS 태그  
-  1.`{color:red}` : 색상  
-  1.`{text-decoration: none;}` : 글자 효괴 지우기, -underline: 및줄  
-  1.`{border-width:5px}` : 경계선  
+  1. `<font color="red"></font>` : 폰트 색상  
+  1. `<!-- -->` : 주석  
+  1. `<style></style>` : CSS 태그  
+  1. `{color:red}` : 색상  
+  1. `{text-decoration: none;}` : 글자 효괴 지우기, -underline: 및줄  
+  1. `{border-width:5px}` : 경계선  
   1. `*/ */` : css 주석
 
 
