@@ -7,8 +7,8 @@
 * ## CSS  
 HTML의 태그 문법의 비효율과 디자인 요소의 부족으로 CSS(Cascading Style Sheets)등장
 * ## CSS의 장점
-  1. 디자인 기능  
-  2. 반복작업의 효율성  
+  > 디자인 기능  
+  > 반복작업의 효율성  
 * ## CSS 문법
   1. `<head></head>` 사이에 `<style></style>`입력  
   1. `<style></style>` 사이에 입력
@@ -39,5 +39,9 @@ id,class,tag
 * ## 인라인과 블록
     >인라인: 화면 전체 적용
     >블록: 태그 부변만 적용
+
+* ## 박스 모델
+<a href="#"><img src="https://www.dummies.com/wp-content/uploads/415895.image0.jpg">
+
 
     
