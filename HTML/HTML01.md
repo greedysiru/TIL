@@ -1,6 +1,6 @@
 # [생활코딩] WEB1-HTML & Internet(2020.11.28~29)
 
-**상세 내용 [블로그](https://greedysiru.tistory.com/3) 참조  
+**상세 내용 [블로그](https://greedysiru.tistory.com/3) 참조**
    
 * ## HTML  
 HTML(Hyper Text Markup Language)는 웹 페이지를 만드는데 기초적인 언어다. 확장자는 .html을 사용하며 OS의 가장 기본적인 에디터로도 작성 가능하다.  
