@@ -13,7 +13,7 @@ JavaScript 사용시, 앞뒤에 `<script></script>`태그를 사용한다.
 
 * ## on속성  
 on으로 시작하는 속성은 두 가지 특징이 있다.
- >속성 값에는 JavaScript가 온다.
+ >속성 값에는 JavaScript가 온다.  
  >웹 브라우저가 속성값을 기억하고 이벤트가 일어나면 실행.  
    
 * ## Datatype  
