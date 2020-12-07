@@ -49,7 +49,7 @@ alert("savjl+name+kanldnslkfasdjkf "+name+" dsfjadskjfldfdssdsfasddsdsvsasajlkxc
       document.querySelector('body').style.color = 'black';
       ">
 ```
-### 부연 설명
+- ### 부연 설명
 1. input type="button"은 버튼을 출력한다는 뜻  
 1. value는 버튼의 이름  
 1. onclik은 이벤트(속성)  
