@@ -5,7 +5,7 @@
 * ## JavaScript의 등장  
 HTML의 정적인 한계로 사용자와 상호작용이 불가능. 그로인해 동적인 JavaScript등장. 웹 페이지는 HTML을 기반으로 JavaScript를 사용해서 사용자와 상호작용할 수 있도록 함.  
   
-* ## `<script>`  
+* ## <script>  
 JavaScript 사용시, 앞뒤에 `<script></script>`태그를 사용한다.  
   
 * ## 이벤트  
@@ -25,20 +25,48 @@ x는 Variable(변수)이고 =은 대입 연산자, 1은 값이다.
  >1=2  
 1은 언제나 1이므로 대입이 안 된다. 1은 Constant(상수)이다.  
   
+* ## 변수 사용 예시
+복잡한 문자열의 원하는 자리에 원하는 단어를 넣는다고 할 때, 아래의 명령어를 입력한다.
+```javascript
+var name = 'greedysiru' ; 
+alert("savjl+name+kanldnslkfasdjkf "+name+" dsfjadskjfldfdssdsfasddsdsvsasajlkxclkvnlxvnl3jsdakfjadsjlks;j sla "+name+" kfdssdavdsfsadfdsfdlanlkavnlasfjsdkj"+name+" fkdjsalfjadsjlnvnsdlafnsldafnls "+name+" ")
 
+```
+그 결과 아래와 같이 원하는 결과가 출력된다.
+![Variable](/ETC/images/JavaScript1.png)  
+변수를 사용했으므로 원하는 단어가 달라졌을 때 변수 값만 변경하면 된다. 생산성이 높아진다.  
+  
+* ## 웹 브라우저 제어  
+웹 페이지의 화면을 Day, Night 버튼을 누르면 각각 화면이 바뀌도록 기능을 준다. 아래와 같은 명령어를 입력한다.
+```html
+<input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+      ">
 
-
-
-
-
-
-
-
-
-
-
-
-
+<input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      ">
+```
+  1. input type="button"은 버튼을 출력한다는 뜻  
+  1. value는 버튼의 이름  
+  1. onclik은 이벤트(속성)  
+  1. document.querySelector()는 선택자  
+  1. style.backgroundColor는 스타일  
+**JavaScript문법과 CSS문법의 혼동과 대문자를 주의한다**  
+명령어를 입력한 결과, 아래 처럼 웹 페이지에 기능을 부여할 수 있다.  
+![button](/ETC/images/JavaScript2.png)  
+  
+* ## 명령어  
+  1. `document.wirte('문자')` : 문자출력  
+  1. `<input type="button" value="hi">` : hi 버튼 출력  
+  1. `<input type="button" value="hi" onclick="alret('hi')">` : 누르면 hi경고창이 뜨는 hi버튼 출력  
+  1. `<input type="text" onchange="alret('changed')">` : 변화가 생기면 changed 경고창이 뜨는 텍스트 상자 출력  
+  1. `'문자열'.length` :  문자열의 길이 출력  
+  1. `str.toUpperCase()` : 대문자 만들기  
+  1. `str.indexOf('o')` : 해당 문자열에 o가 몇번 째에 있는지 출력  
+  
 # Reference
 https://opentutorials.org/course/3085
 
