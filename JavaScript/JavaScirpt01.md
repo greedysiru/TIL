@@ -49,11 +49,12 @@ alert("savjl+name+kanldnslkfasdjkf "+name+" dsfjadskjfldfdssdsfasddsdsvsasajlkxc
       document.querySelector('body').style.color = 'black';
       ">
 ```
->1. input type="button"은 버튼을 출력한다는 뜻  
->1. value는 버튼의 이름  
->1. onclik은 이벤트(속성)  
->1. document.querySelector()는 선택자  
->1. style.backgroundColor는 스타일  
+### 부연 설명
+1. input type="button"은 버튼을 출력한다는 뜻  
+1. value는 버튼의 이름  
+1. onclik은 이벤트(속성)  
+1. document.querySelector()는 선택자  
+1. style.backgroundColor는 스타일  
   
 
 **JavaScript문법과 CSS문법의 혼동과 대문자를 주의한다**  
