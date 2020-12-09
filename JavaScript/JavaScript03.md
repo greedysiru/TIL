@@ -93,7 +93,7 @@ var alist = document.querySelectorAll('a');
 
 `document.querySelectorAll('a')` 는 해당페이지의 `<a>` 를 배열의 형식으로 찾는다. 반복문은 배열의 길이만큼 반복하므로 페이지 전체 `<a>` 는 폰트 색상이 적용된다.
 
-![fontcolor](ETC/images/JavaScript3-1.png)
+![fontcolor](ETC/images/JavaScript3-2.png)
 
 
 
