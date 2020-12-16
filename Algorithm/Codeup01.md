@@ -2,79 +2,79 @@
 
 
 
-## 1001
+## 1. 1001
 
 Hello 
 
 ```python
-print("Hello")
+print("Hello");
 ```
 
 
 
-## 1002
+## 2. 1002
 
 Hello World 
 
 ```python
-print("Hello World")
+print("Hello World");
 ```
 
 
 
-## 1003
+## 3. 1003
 
 Hello
 
 World
 
 ```Python
-print("Hello\nWorld")
+print("Hello\nWorld");
 ```
 
 
 
-## 1004
+## 4. 1004
 
 'Hello' 
 
 ```python
-print("\'Hello\'")
+print("\'Hello\'");
 ```
 
 
 
-## 1005
+## 5. 1005
 
 "Hello World" 
 
 ```python
-print("\"Hello World\"")
+print("\"Hello World\"");
 ```
 
 
 
-## 1006
+## 6. 1006
 
 "!@#$%^&*()"  
 
 ```python
-print("\"!@#$%^&*()\"")
+print("\"!@#$%^&*()\"");
 ```
 
 
 
-## 1007
+## 7. 1007
 
 "C:\Download\hello.cpp" 
 
 ```python
-print("\"C:\Download\hello.cpp\"")
+print("\"C:\Download\hello.cpp\"");
 ```
 
 
 
-## 1008
+## 8. 1008
 
  ┌┬┐
 
@@ -83,31 +83,31 @@ print("\"C:\Download\hello.cpp\"")
  └┴┘
 
 ```python
-print("\u250c\u252c\u2510")
-print("\u251c\u253c\u2524")
-print("\u2514\u2534\u2518")
+print("\u250c\u252c\u2510");
+print("\u251c\u253c\u2524");
+print("\u2514\u2534\u2518");
 ```
 
 
 
-## 1010
+## 9. 1010
 
 정수형으로 변수를 선언 후에 변수에 정수값을 저장하고 출력
 
 ```python
-x = int(input())
-print(x)
+x = int(input());
+print(x);
 ```
 
 
 
-## 1011
+## 10. 1011
 
 문자형으로 변수 선언 후에 변수에 문자를 저장하고 출력
 
 ```python
-x = str(input())
-print(x)
+x = str(input());
+print(x);
 ```
 
 
