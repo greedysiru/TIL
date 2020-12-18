@@ -33,7 +33,7 @@ alert("savjl+name+kanldnslkfasdjkf "+name+" dsfjadskjfldfdssdsfasddsdsvsasajlkxc
 
 ```
 그 결과 아래와 같이 원하는 결과가 출력된다.
-![Variable](/ETC/images/JavaScript1.png)  
+![Variable](./images/JavaScript1-1.png)  
 변수를 사용했으므로 원하는 단어가 달라졌을 때 변수 값만 변경하면 된다. 생산성이 높아진다.  
 
 ## 웹 브라우저 제어  
@@ -60,7 +60,7 @@ alert("savjl+name+kanldnslkfasdjkf "+name+" dsfjadskjfldfdssdsfasddsdsvsasajlkxc
 **JavaScript문법과 CSS문법의 혼동과 대문자를 주의한다**  
 
 명령어를 입력한 결과, 아래 처럼 웹 페이지에 기능을 부여할 수 있다.    
-![button](/ETC/images/JavaScript2.png)  
+![button](./images/JavaScript1-2.png)  
 
 ## 명령어  
 `document.wirte('문자')` : 문자출력  

@@ -64,7 +64,7 @@ else{
 
   onclick속성에 if조건문을 버튼의 id의 value에따라 바뀌도록 한다. night버튼일 때 누르면 화면이 어두워지고 day버튼을 누르면 화면이 밝아질 것이다.
 
-![if](/ETC/images/JavaScript2-1.png)
+![if](./images/JavaScript2-1.png)
 
 
 
@@ -90,6 +90,6 @@ else{
 ## 명령어 정리
 
 `var 변수명=` : 변수 만들기  
-  
+
 # Reference  
 https://opentutorials.org/course/3085

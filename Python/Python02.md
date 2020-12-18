@@ -9,8 +9,8 @@
 ## 자료 구조
 
 	1. List
- 	2. Tuple
- 	3. Dictionary
+	2. Tuple
+	3. Dictionary
 
 
 
@@ -122,7 +122,7 @@ d={}              # 빈 딕셔너리 d를 생성.
 print(d)
 ```
 
-![fruit](/ETC/images/Python2-1.png)
+![fruit](./images/Python2-1.png)
 
 
 
@@ -150,7 +150,7 @@ bob.introduce()
 james.introduce()
 ```
 
-![ClassObject](/ETC/images/Python2-2.png)
+![ClassObject](./images/Python2-2.png)
 
 
 

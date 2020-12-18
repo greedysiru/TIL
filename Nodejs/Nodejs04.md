@@ -30,7 +30,7 @@ node syntax/conditional.js greedy siru
 
  콘솔 창에 위 명령어를 입력하면 아래와 같이 출력된다.
 
-![greedysiru1](/ETC/images/Node4-1.png)
+![greedysiru1](./images/Nodejs4-1.png)
 
 콘솔 창에 입력한 "greedy", "siru"는 배열의 형태로 저장된다.
 
@@ -40,7 +40,7 @@ console.log(args[2]);
 
 이 명령어를 conditional.js에 추가하고 다시 명령어를 실행한다.
 
-![greedysiru2](/ETC/images/Node4-2.png)
+![greedysiru2](./images/Nodejs4-2.png)
 
 배열은 0부터 시작하므로 두 번째 배열인 "greedy"가 출력되는 것이다
 
@@ -56,7 +56,7 @@ console.log("D");
 
 파일에 조건문을 추가하고 콘솔창 명령어에 1을 입력한다.
 
-![greedysiru3](/ETC/images/Node4-3.png)
+![greedysiru3](./images/Nodejs4-3.png)
 
 True이므로 C1이 출력.
 
@@ -229,8 +229,6 @@ var app = http.createServer(function(request,response){
 });
 app.listen(3000);
 ```
-
-
 
 # Reference
 

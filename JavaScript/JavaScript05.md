@@ -77,7 +77,7 @@
 
 `home.showAll=function(){}` 은 객체에서의 함수정의이다.
 
-![propertyandmethod](/ETC/images/JavaScript5-1.png)
+![propertyandmethod](./images/JavaScript5-1.png)
 
 마지막에 showAll까지 출력되는 이유는 객체에 함수도 포함되기 때문이다.
 

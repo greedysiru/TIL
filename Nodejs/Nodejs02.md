@@ -55,7 +55,7 @@ console.log(letter);
 
 ## URL
 
-![URL](/ETC/images/Node2.png)
+![URL](./images/Nodejs2-1.png)
 
 1. Protocol : 서버 접속에 대한 통신 규칙.
 2. Domain : host.인터넷 접속된 각 컴퓨터.
@@ -88,7 +88,7 @@ response.end(queryData.id);
 
 콘솔창과 클라이언트의 화면에 출력.
 
-![URL2](/ETC/images/Node2-2.png)
+![URL2](./images/Nodejs2-2.png)
 
 
 
