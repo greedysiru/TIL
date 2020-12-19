@@ -1,6 +1,6 @@
 # [Codeup] 기초 100제(21~30) (2020.12.17)
 
-
+**사용 언어는 Python입니다.**
 
 ## 1. 1023
 
@@ -119,8 +119,6 @@ format함수로 8진수 변환
 x = int(input());
 print(format(x,'x'));
 ```
-
-
 
 # Reference
 

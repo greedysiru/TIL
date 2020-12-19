@@ -1,6 +1,6 @@
 # [Codeup] 기초 100제(1~10) (2020.12.15)
 
-
+**사용 언어는 Python입니다.**
 
 ## 1. 1001
 
@@ -109,8 +109,6 @@ print(x);
 x = str(input());
 print(x);
 ```
-
-
 
 # Reference
 
