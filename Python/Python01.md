@@ -1,4 +1,4 @@
-#[Teccboi Wonie]코딩 1시간만에 배우기 -Python(1) (2020.12.13)
+# [Teccboi Wonie]코딩 1시간만에 배우기 -Python(1) (2020.12.13)
 
 
 
