@@ -1,23 +1,13 @@
-# [생활코딩]WEB2-Node.js (6)(2020.12.19~)
+# [생활코딩]WEB2-Node.js (6)(2020.12.19~21)
 
-**본 내용은 해당 [강의](https://opentutorials.org/course/3332) 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/46) 참고** 
 
 ## HTML-form
 
-지금까지, 데이터 디렉토리에 접근할 수 있는 것은 자기 자신이기 때문에 컨텐츠 생성은 소유자만 할 수 있었다. 지금부터는, 사용자가 서버를 통해서 데이터를 전송하면 컨텐츠를 생성, 수정 삭제를 할 수 있도록 HTML-form을 알아본다.
-
-인풋태그로 이제 서버에 데이터를 전송할 수 있다
-
-텍스트에어리어는 여러줄 입력
-
-서브밋은 서버에 전송하는 버튼생성
-
-입력한 주소로 전송
-
-각각 인풋(컨트롤)에 이름이 있어야함
+HTML-form으로 사용자가 컨텐츠를 생성할 수 있게 한다.
 
 ```html
-<form action="http://localhost:3000/process_create"> 
+<form action="http://localhost:3000/process_create" method="post">
 <p><input type="text" name="title"></p>
 <p><textarea name="description"></textarea></p>
 <p><input type="submit"></p>
@@ -26,31 +16,104 @@
 
 `<form></form>` : HTML-form을 사용
 
-​	-`action` : 각 각의 컨트롤`input, textarea`에 사용자가 입력한 정보를 `submit`했을 때 속성이 가르키는 곳으로 전송
+​		-`action` : 각 각의 컨트롤`input, textarea`에 사용자가 입력한 정보를 `submit`했을 때 속성이 가르키는 곳으로 전송
+
+​		-`method="post"` : 쿼리스트링을 생성하지 않는 방식
 
 `<input></input>` : 사용자가 데이터를 입력할 수 있는 컨트롤 생성
 
-​	-`type="text"` : 텍스트 상자
+​		-`type="text"` : 텍스트 상자
 
-​	-`type="submit"` : 제출버튼
+​		-`type="submit"` : 제출버튼
 
 `<textarea></textarea>` : 여러줄 입력할 수 있는 텍스트 상자
 
-![Nodejs6-1](images/Nodejs6-1.png)
 
-만들어진 컨트롤들에 위와 같이 입력하면 아래와 같은 URL이 만들어진다.(Not found 출력)
 
-> http://localhost:3000/process_create?title=hi&description=greedy+siru
+## App - 글생성 UI 만들기
 
-`form` 태그의 `action` 속성이 가르킨 주소로 각 컨트롤의 `name=입력 내용` 인 쿼리스트링이 생성된 것을 볼 수 있다. 하지만, 이것은 좋은 방식이 아니다. 왜냐하면 무분별하게 서버의 정보가 생성, 수정, 삭제가 될 수 있기 때문이다. 그러므로 HTML-form의 전송 방식을 다른 방법으로 해야한다.
+이제 HTML-from으로 사용자가 컨텐츠를 만들 수 있도록 링크를 생성한다.
 
 ```html
-<form action="http://localhost:3000/process_create" method="post">
+${list}
+     <a href="/create">create</a>
+${body}
 ```
 
-이렇게 `method="post"` 의 속성을 준다. 이렇게 하면, 아까와 똑같은 데이터를 입력해도 쿼리스트링이 생성되지 않는다.
+해당하는 경로의 페이지를 생성하고 HTML-form을 넣어준다.
 
-> http://localhost:3000/process_create
+```javascript
+    else if(pathname === '/create'){
+       fs.readdir('./data', function(error, filelist){
+         var title = 'WEB - create';
+         var list = templateList(filelist);
+         var template = templateHTML(title, list, `
+           <form action="http://localhost:3000/process_create" method="post">
+             <p><input type="text" name="title" placeholder="title"></p>
+             <p>
+               <textarea name="description" placeholder="description"></textarea>
+             </p>
+             <p>
+               <input type="submit">
+             </p>
+           </form>
+         `);
+         response.writeHead(200);
+         response.end(template);
+       });
+```
 
-그렇기 때문에, 일반적으로 사용자가 서버에서 데이터를 가져오는 경우에는 `method="get"` 속성을 부여하고(또는 생략) HTML-form처럼 사용자가 컨텐츠를 생성, 수정, 삭제하는 경우에는 `post` 를 사용한다.
+![Nodejs6-2](images/Nodejs6-2.png)
 
+
+
+## App - POST 방식으로 전송된 데이터 받기
+
+Node.js에서 querystring모듈을 가져오기 위해, 아래를 입력한다.
+
+```javascript
+var qs = require('querystring');
+```
+
+HTML-form에 으로 서버에 데이터를 보낼때,  `pathname ==='/create'` 인 경우에 대해서 명령어를 입력한다.
+
+```javascript
+else if(pathname === '/create_process'){
+       var body = '';
+       request.on('data', function(data){
+           body = body + data;
+       });
+       request.on('end', function(){
+           var post = qs.parse(body);
+           var title = post.title;
+           var description = post.description
+       });
+       response.writeHead(200);
+       response.end('success');
+```
+
+`request.on('data', function(data){body = body + data;})` : 서버가 수신할 때수신한 정보를 전달. 데이터를 `body` 에 추가.
+
+`request.on('end', function(){var post = qs.parse(body);var title =post.title; var description = post.description });` : 수신 완료시 `body` 에서 변수 `title` 과 `description` 에 `post`의 데이터를 입력한다.
+
+
+
+## App - 파일생성과 리다이렉션
+
+사용자가 데이터를 서버에 보내면 파일을 생성하고 해당하는 파일을 볼 수 있는 리다이렉션 기능을 추가한다.
+
+```javascript
+var description = post.description;
+           fs.writeFile(`data/${title}`, description, 'utf8', function(err){
+             response.writeHead(302, {Location: `/?id=${title}`});
+             response.end();
+           })
+```
+
+fs 모듈에 의해서, 사용자가 입력한 `title` 을 제목으로, `description` 의 내용을 가진 파일이 utf8의 형식으로 생성된다. 뒤이어서 함수가 콜백으로 실행되어서 사용자가 입력한 `title` querystring으로 이동시킨다.
+
+
+
+# Reference
+
+https://opentutorials.org/course/3332
