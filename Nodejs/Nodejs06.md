@@ -63,7 +63,7 @@ ${body}
        });
 ```
 
-![Nodejs6-2](images/Nodejs6-2.png)
+![Nodejs6-2](images/Nodejs6-1.png)
 
 
 
