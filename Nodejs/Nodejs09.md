@@ -19,7 +19,7 @@ path.parse('../password.js').base;
 
 `path.parse('../password.js').base;` :  `base`의해 상위 디렉토리를 제외하고 읽는다.
 
-아래의 명령어 이것을 적용한다.
+아래의 명령어에 이것을 적용한다.
 
 ```javascript
 fs.readFile(`data/${queryData.id}`, 'utf8', function(err, description)
