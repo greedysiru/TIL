@@ -157,7 +157,7 @@ for i in range(3):
   print("나")
   
   if i == 1:
-    Continue
+    continue
     
   print("다") 
 ```

@@ -6,7 +6,7 @@
 
 ## App - 글수정 - 수정 링크 생성
 
-이제, 사용자가 수정을 할 수 있도록 update 기능을 추가한다. 함수 `templateHTML` 에 `controal`  인자를 넣는다.
+이제, 사용자가 수정을 할 수 있도록 update 기능을 추가한다. 함수 `templateHTML` 에 `control`  인자를 넣는다.
 
 ```javascript
 function templateHTML(title, list, body, control){
