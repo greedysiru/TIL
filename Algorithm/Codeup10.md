@@ -2,7 +2,7 @@
 
 **사용 언어는 Python입니다.**
 
--폰트14
+
 
 ## 1. 1093
 
@@ -15,23 +15,15 @@
 ```python
 n = int(input());
 a = input().split();
-d = {}
-for i in range(1,24):
-  d[str(i)] = 0;
-for i in range(n):
+d = {} 								# 빈 딕셔너리 생성
+for i in range(1,24): # 1부터 23까지 key 생성
+  d[str(i)] = 0; 			#str 변환
+for i in range(n):		# 부른 횟수 n만큼 번호 리스트 a를 부르면 각각의 숫자가 나온다
   if str(a[i]) in d:
-    d[str(a[i])] = d[str(a[i])] + 1;
+    d[str(a[i])] = d[str(a[i])] + 1; # d와 비교 후 있으면 1 더하기
 for i in range(1,24):
-  print(d[str(i)], end = ' ');
+  print(d[str(i)], end = ' '); #value 나란히 출력
 ```
-
-빈 딕셔너리 `d`를 생성 후 1부터 23까지 `key`를 만든다. `key`의 데이터 형식은 `str`
-
-부른 횟수 `n` 만큼 번호 리스트`a`를 부르면, 각각의 숫자가 나온다.
-
-나온 숫자를 `d`에 `key` 와 비교해서 1씩 더한다.
-
-`value`를 나란히 출력
 
 
 
@@ -80,23 +72,15 @@ print(min(a));
 
 ```python
 n = int(input());
-location = [[0]*19 for i in range(19)];
+location = [[0]*19 for i in range(19)]; # 주어진 바둑판의 크기칸큼 배열 생성
 for j in range(n):
-  x,y = map(int,input().split());
-  location[x-1][y-1] =1;
+  x,y = map(int,input().split()); # 돌의 위치를 리스트 형식으로 받음
+  location[x-1][y-1] =1; # (0,0)부터 시작하므로
 for a in range(19):
   for b in range(19):
-    print(location[a][b], end=' ');
+    print(location[a][b], end=' '); # 대괄호 제외하고 숫자간 공백을 두고 한 줄씩 출력
   print();  
 ```
-
-바둑판은 19 * 19 이므로 , `location = [[0]*19 for i in range(19)];` 
-
-돌이 있는 위치를 x,y 리스트 형식으로 받는다.
-
-행렬은 0부터 세므로, `[x-1][y-1]`
-
-문제에 제시한 대로, 대괄호를 제외하고 숫자만 한 줄씩 출력해야한다. 한 행씩 숫자간 공백을 가지고 출력하므로 `for` 문을 위와 같이 두 번 사용
 
 
 
@@ -139,22 +123,22 @@ for i in range(19):
 
 ```python
 h, w = map(int, input().split())
-shape = [[0 for _ in range(w)] for _ in range(h)]
+shape = [[0 for _ in range(w)] for _ in range(h)] # 입력받은 수 만큼 2차원 배열 생성
 n = int(input())
-for _ in range(n) :
-  l, d, x, y = map(int, input().split())
-  x, y = x-1, y-1
-  if d == 0 :
-    for i in range(l) :
-      shape[x][y+i] = 1
+for _ in range(n) :													 # 막대의 개수만큼 반복
+  l, d, x, y = map(int, input().split()) 			# 길이, 방향, 좌표 입력
+  x, y = x-1, y-1 # 배열은 (0,0)부터 시작하므로
+  if d == 0 : # 가로 방향일 때
+    for i in range(l) : # 길이 만큼 반복
+      shape[x][y+i] = 1 # 가로일때는 y만 이동해서 칠함
   else :
-    for i in range(l) :
+    for i in range(l) : # 세로는 가로의 반대로
       shape[x+i][y] = 1
 for s in shape :
-  print( *s )
+  print( *s ) #괄호를 제외한 격자판의 상태 출력
 ```
 
-![55](../../../../../Library/Application Support/typora-user-images/55.png)
+
 
 ## 7.  1099
 
@@ -163,30 +147,36 @@ for s in shape :
 성실한 개미가 이동한 경로를 9로 표시해 출력
 
 ```python
-ant_house = [
-         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-         [1, 0, 0, 1, 0, 0, 0, 0, 0, 1],
-         [1, 0, 0, 1, 1, 1, 0, 0, 0, 1],
-         [1, 0, 0, 0, 0, 0, 0, 1, 0, 1],
-         [1, 0, 0, 0, 0, 0, 0, 1, 0, 1],
-         [1, 0, 0, 0, 0, 1, 0, 1, 0, 1],
-         [1, 0, 0, 0, 0, 1, 2, 1, 0, 1],
-         [1, 0, 0, 0, 0, 1, 0, 0, 0, 1],
-         [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-]
-x,y = 1,1
-while ant_house[x][y] != 2 :
-  if ant_house[x][y] == 0 :
-    ant_house[x][y] = 9
-    y = y+1
-  else :
-    x = x+1
-    y = y-1
-ant_house[x][y] = 9
-for house in ant_house :
-  print( *house )
+m=[] # 빈 배열 m 생성
+for i in range(12) : # []12개 m 배열에 넣기
+    m.append([])
+    for j in range(12) : # 각 []에 0 12개 넣기
+        m[i].append(0)
+for i in range(10) : 
+  a=input().split() # 10번 입력값 공백을 두고 받기
+  for j in range(10) : # 배열 m의 [i,1~10]에 받은 값 넣기
+    m[i+1][j+1]=int(a[j]) # 테두리에 0을 남기고 배열 형성
 
+x=2
+y=2 #개미의 초기 좌표
+while True : 
+  if m[x][y]==0 : # 밟고 있는 곳이 0이면 9로 표시
+    m[x][y]=9
+  elif m[x][y]==2 : #먹이를 만나면 9를 표시하고 반복문 종료
+    m[x][y]=9
+    break  
+  if (m[x][y+1])==1 and m[x+1][y]==1) or (x==9 and y==9) : # 오른쪽이 벽이고 아래가 벽이거나
+    break                                                  # (9,9)에 위치하면 종료
+
+  if m[x][y+1]!=1 : # 오른쪽이 벽이 아니라면
+    y+=1            # 오른쪽으로 한칸 이동
+  elif m[x+1][y]!=1 : #아래가 벽이 아니라면
+    x+=1              #아래로 한칸 이동
+
+for i in range(1,11) : # 1~10까지 i반복
+  for j in range(1,11) :  # 1~10 까지 j 반복
+    print(m[i][j], end=' ') # m[i][1~10] 나란히 출력
+  print()
 ```
 
 
