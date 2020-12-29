@@ -125,8 +125,8 @@ for i in range(19):
 h, w = map(int, input().split())
 shape = [[0 for _ in range(w)] for _ in range(h)] # 입력받은 수 만큼 2차원 배열 생성
 n = int(input())
-for _ in range(n) :													 # 막대의 개수만큼 반복
-  l, d, x, y = map(int, input().split()) 			# 길이, 방향, 좌표 입력
+for _ in range(n) :                               # 막대의 개수만큼 반복
+  l, d, x, y = map(int, input().split())          # 길이, 방향, 좌표 입력
   x, y = x-1, y-1 # 배열은 (0,0)부터 시작하므로
   if d == 0 : # 가로 방향일 때
     for i in range(l) : # 길이 만큼 반복
@@ -171,7 +171,7 @@ while True :
   if m[x][y+1]!=1 : # 오른쪽이 벽이 아니라면
     y+=1            # 오른쪽으로 한칸 이동
   elif m[x+1][y]!=1 : #아래가 벽이 아니라면
-    x+=1              #아래로 한칸 이동
+    x+=1             #아래로 한칸 이동
 
 for i in range(1,11) : # 1~10까지 i반복
   for j in range(1,11) :  # 1~10 까지 j 반복
