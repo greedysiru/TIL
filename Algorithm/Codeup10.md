@@ -138,7 +138,7 @@ for s in shape :
   print( *s ) #괄호를 제외한 격자판의 상태 출력
 ```
 
-
+![Codeup10-1](images/Codeup10-1.png)
 
 ## 7.  1099
 
@@ -179,7 +179,7 @@ for i in range(1,11) : # 1~10까지 i반복
   print()
 ```
 
-
+![Codeup10-2](images/Codeup10-2.png)
 
 # Reference
 
