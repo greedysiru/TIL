@@ -4,6 +4,8 @@
 
 **본 내용은 해당 [강의](https://www.youtube.com/watch?v=m-9pAwq1o3w&list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC&index=1) 토대로 작성**
 
+
+
 # 파이썬 문법 부수기
 
 ## 자료형
