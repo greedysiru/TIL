@@ -36,7 +36,7 @@ GitHub desktop
 
 ## 2. list tag
 
-* `<ol>`  : ordered list
+* **ol** : ordered list
 
 ```html
 <ol>
@@ -46,7 +46,7 @@ GitHub desktop
 </ol>
 ```
 
-* `<ul>` : unordered list
+* **ul** : unordered list
 
 ```html
 <ul>
@@ -61,9 +61,7 @@ GitHub desktop
 ## 3.  Attributes
 
 * 속성(Attributes)은 태그의 기능을 추가
-* 태그마다 가지는 속성이 있다.
-* 없는 속성은 브라우저가 알아보지 못한다.
-* 공통 사용 속성도 있다.
+* 속성이 있어야만하는 태그도 있으며 태그마다 가지는 속성이 있다.
 
 
 
@@ -73,7 +71,7 @@ GitHub desktop
 <a href = "http://www.google.com" target="_blank">go to the google.com</a>
 ```
 
-* `<a> `: 다른 웹사이트로 이동
+* **a** : 다른 웹사이트로 이동
   * **href** : hyperlink reference 이동할 곳을 알려주는 속성
   * **target**
     * _self : 기본값
@@ -94,8 +92,6 @@ GitHub desktop
 
 ## 4. HTML 문서의 구조
 
-HTML 문서의 구조 규칙
-
 ```html
 <!DOCTYPE html>       <!-- 필수 첫 라인-->
 <html>                <!-- 사이에 넣는 것이 html 코드-->
@@ -115,12 +111,10 @@ HTML 문서의 구조 규칙
 </html>
 ```
 
-* `<!DOCTYPE html>` : 브라우저에게 text파일이 아니라 html인 것을 선언
-* `<html>` : 이 태그 사이에 넣는 것이 html 코드라는 것을 표시
-* `<head>` : 페이지 환경을 설정
-  * 텍스트를 작성하면 안 된다. CSS 나 JavaScript와 오류를 낼 수 있다.
-  * 이 위치의 태그들은 화면에 안 보인다.
-* `<body>` : 사용자에게 보여질 태그들과 content를 넣는다.
+* **!DOCTYPE html** : 브라우저에게 html인 것을 선언
+* **html** : 이 태그 사이에 넣는 것이 html 코드라는 것을 표시
+* **head** : 페이지 환경을 설정
+* **body** : 사용자에게 보여질 태그들과 content를 넣는다.
 
 
 
@@ -142,15 +136,15 @@ HTML 문서의 구조 규칙
   ...
 ```
 
-* `<meta>` : 표현할 수 없는 다양한 종류의 메타데이터를 나타낸다. 메타는 부가적인 정보라는 뜻이다.
-  * charset : text를 어떻게 보여줄지 말해준다. 한글이 있는 경우, **"utf-8"**을 입력해야 깨지지 않는다.
+* **meta** : 표현할 수 없는 다양한 종류의 메타데이터
+  
+  * charset :  **"utf-8"**을 입력
   * name, cotent  검색 엔진에게 웹 사이트의 정보를 알려 준다.
   * self-closing tag
-* `<html>`의 lang 속성 : 검색엔진에게 주된 사용 언어를 알려준다.
-* `<link>` : 웹 브라우저에서 탭의 아이콘 이미지 설정
-* `<head>` 태그는 웹 사이트가 무엇인지에 대한 설정과 정보를 웹 브라우저와 검색엔진에게 이해할 수 있도록 정리해준다.
+* **html**의 lang 속성 : 검색엔진에게 주된 사용 언어를 알려준다.
+* **link** : 웹 브라우저에서 탭의 아이콘 이미지 설정
 
-
+  
 
 ## 6. form tag
 
@@ -167,9 +161,9 @@ HTML 문서의 구조 규칙
 ...
 ```
 
-* `<form>` : 입력창 구획
-* `<input>` : 입력창 생성, 다양한 속성으로 기능을 추가할 수 있다.
-  * type : text, submit, file, password 등 다양한 속성을 주어 입력받을 형식 정할 수 있다.
+* **form** : 입력창 구획
+* **input** : 입력창 생성, 다양한 속성으로 기능을 추가
+  * type : text, submit, file, password
   * placeholder : 입력창에 표시될 이름
   * required : 입력할 것을 사용자에게 표시
   * minlength : 최소 입력될 글자
@@ -187,7 +181,7 @@ HTML 문서의 구조 규칙
 </form>
 ```
 
-* `<label>` : 사용자 인터페이스 항목(input)의 설명
+* **label** : 사용자 인터페이스 항목(input)의 설명
   * for속성으로 input tag의 id를 가리킬 수 있다.
 
 
@@ -195,9 +189,10 @@ HTML 문서의 구조 규칙
 ## 7. id 속성
 
 * unique identifier(고유 식별자)
+
 * element당 하나의 id만 가질 수 있다.
 
-
+  
 
 ## 8. Semantic HTML
 
@@ -207,3 +202,8 @@ HTML 문서의 구조 규칙
 | `<footer>` 꼬리말                                      | `<span>` 짧은 text               |
 | `<address>` 주소                                       |                                  |
 
+
+
+# Reference
+
+https://nomadcoders.co/kokoa-clone/lobby
