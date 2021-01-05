@@ -8,8 +8,6 @@
 
 # Learning CSS
 
-
-
 ## 1. CSS 추가하기
 
 ### HTML파일에 인라인 코드로 작성
