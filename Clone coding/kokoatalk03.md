@@ -122,7 +122,7 @@
 
 ```CSS
 <style>
-		div {
+    div {
         width: 300px;
         height: 300px;
         background-color: wheat;
@@ -161,7 +161,7 @@
 ```CSS
 <head>    
 <style>
-		div:first-child{
+    div:first-child{
         background-color: tomato;
     }
     div:last-child{
@@ -186,16 +186,16 @@
 ```CSS
 <head>
 <style> 
-		span:nth-child(2){
+    span:nth-child(2){
         background-color: teal;
     }
-		span:nth-child(even){
+    span:nth-child(even){
         background-color: tomato;
     }
-		span:nth-child(odd){
+    span:nth-child(odd){
         background-color: whitesmoke;
     }
-		span:nth-child(5n + 1){
+    span:nth-child(5n + 1){
         background-color: teal;
     }
 </style>
@@ -222,7 +222,7 @@
 ```CSS
 <head>
 <style>
-		input {
+    input {
         border:1px solid wheat;
     }
     input:required {
