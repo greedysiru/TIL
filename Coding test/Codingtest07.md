@@ -292,29 +292,3 @@ for i in range(k):
 print(sum(a)) # 배열 A의 모든 원소의 합을 출력
 ```
 
-
-
-# Reference
-
-https://www.youtube.com/watch?v=KGyK-pNvWos&list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC&index=4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
