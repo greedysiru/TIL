@@ -2,19 +2,13 @@
 
 
 
-**본 내용은 해당 [강의](https://nomadcoders.co/kokoa-clone/lobby) 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/102) 참고**
 
 
 
 # Cloning time
 
 ## friends.html
-
-![Friends](../../../../../Desktop/Friends.png)
-
-- Friends 페이지를 Cloning한다.
-
-
 
 ### Navigation bar
 
@@ -41,7 +35,7 @@ nav>ul>li>*4>a
 
 #### html 코드 작성
 
-* Navigation bar의 기본 html 코드를 작성한다.
+* Navigation bar의 기본 html 코드를 작성
 
 ```html
     <nav class="nav">
@@ -62,13 +56,11 @@ nav>ul>li>*4>a
     </nav>
 ```
 
-* BEM 작명법을 사용한다.
-
 
 
 #### CSS 코드 작성
 
-* **componetns 폴더** 아래에 **nav-bar.css를 생성**하고 CSS 코드를 입력한다.
+* **componetns 폴더** 아래에 **nav-bar.css를 생성**하고 CSS 코드를 입력
 * **styles.css**에 꼭 **@import**  한다.
 
 ```CSS
@@ -457,16 +449,6 @@ a {
 
 
 
-## 완성된 페이지
+# Reference
 
-![스크린샷 2021-01-08 오전 12.19.26](../../../../../Desktop/스크린샷 2021-01-08 오전 12.19.26.png)
-
-# 느낀점
-
-니꼬쌤과 똑같이 했는데도 종종 간격이 문제가 생기는 경우가 있었다. 그럴때는 직접 margin값이나  padding값을 조절해서 내가 원하는데로 깔끔하게 만들어내니 꽤 재밌었다. friends.html에서 몇 번 부모 자식 요소 설정 문제로 막혔지만 당황하지 않고 침착하게 들어가면 안될 요소들을 빼거나 추가해서 해결할 수 있었다! 코드가 길어지면 길어질 수록 BEM은 조금 헷갈려지는 것 같다.
-
-
-
-# Source Code
-
-https://github.com/greedysiru/kokoa-clone-2021
+https://nomadcoders.co/kokoa-clone/lobby
