@@ -2,7 +2,7 @@
 
 
 
-**상세 내용 [블로그](https://greedysiru.tistory.com/107) 참고**
+**상세 내용 [블로그](https://greedysiru.tistory.com/108) 참고**
 
 
 
@@ -238,6 +238,41 @@
 
 * **focus-within** : state selector
   *  내부에 **focus 되어 있는 요소**가 있는지 알 수 있다.
+
+
+
+## 5. No Mobile Media Query
+
+* 스크린이 일정 크기 이상으로 늘어났을 때, **Media Query를 사용해서 안내문구를 출력**하도록 한다.
+* **모든 페이지 html에 아래와 같이 div를 추가한다.**
+
+```html
+    <div id="no-mobile">
+        <span>Your screen is too big ㅠㅠ</span>
+    </div>
+```
+
+* **Media Query**를 입력한다.**(css/components/no-mobile.css)**
+
+```CSS
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+}
+```
 
 
 
