@@ -19,7 +19,7 @@
 
 
 
-![kokoatalk11-1](images/kokoatalk10-1.png)
+![kokoatalk11-1](images/kokoatalk11-1.png)
 
 
 
