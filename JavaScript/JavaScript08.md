@@ -1,8 +1,8 @@
-# [노마드코더]바닐라 JS로 크롬 앱 만들기 (1)(2021.1.13)
+# [노마드코더]바닐라 JS로 크롬 앱 만들기 (2)(2021.1.13)
 
 
 
-**본 내용은 해당 [강의](https://nomadcoders.co/javascript-for-beginners/lobby) 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/114) 참고**
 
 
 
@@ -16,18 +16,6 @@
 
 
 
-### console.log
-
-* console은 **object**이다.
-* console이라는 object안에 log라는 함수가 있다.
-* **console.log(console)** 을 출력하면 아래처럼 log를 포함한 여러가지의 함수가 있는 것을 볼 수 있다.
-
-![스크린샷 2021-01-12 오후 11.58.09](../../../../../Library/Application Support/typora-user-images/스크린샷 2021-01-12 오후 11.58.09.png)
-
-* **JavaScript는 내장함수를 위와 같은 방식으로 가지고 있다.**
-
-
-
 ### 함수 선언
 
 * 기본적인 내장함수 말고, 원하는 기능을 할 수 있도록 함수를 선언할 수 있다.
@@ -37,9 +25,6 @@
 >​    함수 선언
 >
 >}
-
-* **함수명** : camel case 문법으로 만든다.
-* **인자(argument, parameter)** : 입력하는 값을 저장하고 함수에 사용할 수 있게 한다.
 
 
 
@@ -52,16 +37,11 @@ function sayHello(name, number){
 sayHello("Jaemin", 15); // hello Jaemin You are 15 years old 출력
 ```
 
-* 선언 된 sayHello 함수는 두 개의 인자를 받아 console.log함수를 실행한다.
-* 인자와 문자열은 , 또는 + 로 합칠 수 있다.
-
 
 
 ## 2. More Function Fun
 
-### backpack
-
-* **`(backtick) 안에 ${}를 사용해서 문자열과 인자를 더 편하게 사용할 수 있다.**
+### backtick
 
 ```JavaScript
 function sayHello(name, number){
@@ -88,8 +68,6 @@ const greetJaemin = sayHello("Jaemin", 15) //sayHello 함수를 실행하고 아
 console.log(greetJaemin) //undefined
 ```
 
-* greetJaemin 변수를 선언 할 때, 함수가 실행되어 문구가 출력되지만 마지막 명령어는 실행하지 못하고 undefined 가 출력된다.
-
 
 
 #### return을 사용한 경우
@@ -103,14 +81,9 @@ const greetJaemin = sayHello("Jaemin", 15) //sayHello 함수의 리턴값 입력
 console.log(greetJaemin) //sayHello 출력
 ```
 
-* return으로 인해 greetJaemin변수에 정상적으로 값이 입력되고 마지막 명령어로 인해 문구가 잘 출력된다.
-
 
 
 ### Object로 함수 정의하기
-
-* 앞서 말했듯이 console.log는 object에 함수가 정의 된 형태이다.
-* 이런 방식으로 사용자 정의 함수도 가능하다.
 
 ```JavaScript
 const calculator = {
@@ -149,10 +122,6 @@ console.log(power);
 
 ## 3. JS DOM Functions
 
-* CSS와 같이 JavaScript에서도 element를 선택할 수 있고 변경할 수 있다.
-
-
-
 ### DOM
 
 * **Document Object Model**
@@ -174,7 +143,7 @@ title.innerHTML = "Hi! From JS";
 
 ### query selector
 
-* HTML 지정한 해당 요소를 찾아와서 변수에 정의할 수 있다.
+* HTML 지정한 해당 요소를 찾아와서 변수에 정의
 * 사용 예시
 
 ```JavaScript
@@ -184,9 +153,9 @@ title.style.color = "tomato";
 document.title = "I own you now";
 ```
 
-* **document.querySelector** : id가 title인 element를 찾아서 변수 title에 입력한다.
-* **title.style.color** : 색상 스타일을 적용한다.
-* **document.title** : html문서의 title을 변경한다.
+* **document.querySelector** : id가 title인 element를 찾아서 변수 title에 입력
+* **title.style.color** : 색상 스타일을 적용
+* **document.title** : html문서의 title을 변경
 
 
 
@@ -203,7 +172,7 @@ document.title = "I own you now";
 
 >target.addEventListener(type, listener);
 
-* **target의 event type을 감지해서 listener에게 전달할 수 있다.**
+* **target의 event type을 감지해서 listener에게 전달**
 * 사용 예시
 
 ```javascript
@@ -233,10 +202,6 @@ title.addEventListener("click", handleClick); // title이 click되면 handleClic
 > } else {
 >     block
 > } 
-
-* 괄호안의 조건이 **참**이면 **if의 block을 실행**
-* **거짓**이면 **else의 block을 실행**
-* 조건이 여러개일 경우, **else if 사용**
 
 
 
@@ -304,22 +269,13 @@ window.addEventListener("online", handleOnline);  // 인터넷 연결이 되면 
 
 ```
 
-|                          기본 색상                           |                          다른 색상                           |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![스크린샷 2021-01-13 오후 8.41.44](../../../../../Desktop/스크린샷 2021-01-13 오후 8.41.44.png) | ![스크린샷 2021-01-13 오후 8.41.51](../../../../../Desktop/스크린샷 2021-01-13 오후 8.41.51.png) |
-
 
 
 ## 8. DOM - If else - Function practice Two
 
-* 위의 코드는 JavaScript에서 CSS를 다루었다. 그러나, 이것은 좋은 방법이 아니다. 가능하면 HTML에서 다룰 수 있는 것은 HTML에서, CSS에서 다룰 수 있는것은 CSS에서, JavaScript에서 다룰 수 있는 것은 JavaScript에서만 다루는 것이 좋다.
-* **즉, JavaScript는 Interactive한 logic을 다룰 수 있도록 한다.**
-
 
 
 ### HTML 코드
-
-* 실습에 설정된 HTML코드는 아래와 같다.
 
 ```HTML
 <!DOCTYPE html>
@@ -335,13 +291,9 @@ window.addEventListener("online", handleOnline);  // 인터넷 연결이 되면 
 </html>
 ```
 
-* **h1 태그에 id="title", class="btn" 선언**
-
 
 
 ### CSS 코드
-
-* 실습에 설정된 CSS코드는 아래와 같다.
 
 ```CSS
 body {
@@ -358,9 +310,6 @@ h1 {
   color: #7f8c8d;
 }
 ```
-
-* **클래스 clicked가 생기면, 폰트의 색상이 바뀌게 된다.**
-* **JavaScript로 h1태그에 클래스 clicked를 추가해서 해당 기능을 만든다.**
 
 
 
@@ -421,7 +370,7 @@ init();
 
 ### JavaScript Code 3
 
-* 위의 코드를 대체할 수 있는 간단한 함수를 사용할 수 있다.
+* 위의 코드를 대체할 수 있는 간단한 함수를 사용
 
 ```javascript
 const title = document.querySelector("#title");
@@ -438,14 +387,10 @@ function init() {
 init();
 ```
 
-* **title.classList.toggle** : 클래스가 있으면 추가 없으면 제거한다.
+* **title.classList.toggle** : 클래스가 있으면 추가 없으면 제거
 
 
 
-# 느낀점
+# Reference
 
-중간에, 자바스크립트가 실행이 되지 않아서 한 번 위기를 겪었으나, 단순 오류였다. 하하
-
-전반적으로 잘 습득한 것 같다!
-
-하지만 아직 메소드에 대한 개념은 와 닿지는 않네ㅠㅠ
+https://nomadcoders.co/javascript-for-beginners/lobby
