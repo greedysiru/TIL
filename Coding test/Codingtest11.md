@@ -93,7 +93,7 @@
 
 * 왼쪽과 오른쪽은 서로소 관계이다.
 
-![스크린샷 2021-01-14 오후 8.43.28](../../../../../Library/Application Support/typora-user-images/스크린샷 2021-01-14 오후 8.43.28.png)
+![스크린샷 2021-01-14 오후 8.43.28](images/Codingtest11-1.png)
 
 ### 서로소 집합 자료 구조 : 연결성
 
@@ -225,7 +225,7 @@ def find_parent(parent, x):
 
 
 
-![스크린샷 2021-01-14 오후 8.47.02](../../../../../Library/Application Support/typora-user-images/스크린샷 2021-01-14 오후 8.47.02.png)
+![스크린샷 2021-01-14 오후 8.47.02](images/Codingtest11-2.png)
 
 
 
