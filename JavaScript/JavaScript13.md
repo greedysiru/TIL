@@ -2,9 +2,7 @@
 
 
 
-**본 내용은 해당 [강의](https://www.inflearn.com/course/핵심개념-javascript-flow/dashboard) 토대로 작성**
-
-
+**상세 내용 [블로그](https://greedysiru.tistory.com/137) 참고**
 
 # 1. this
 
@@ -41,10 +39,6 @@
 * **전역객체** : 개념상으로 전역 컨텍스트를 실행하는 주체
   * **window: 브라우저**
   * **global: node.js**
-
-|              브라우저 콘솔에서               |                 node.js에서                  |
-| :------------------------------------------: | :------------------------------------------: |
-| ![JavaScript13-1](images/JavaScript13-1.png) | ![JavaScript13-2](images/JavaScript13-2.png) |
 
 
 
@@ -418,6 +412,6 @@ arr.forEach(obj.logValues); /* callback함수로 전달 */
 
 
 
-# 느낀점
+# Reference
 
-this에서 신세계를 맛보았다.. 25분강의인데 이해하고 복습하는데 엄청 걸린 것 같다. 그래도, 이제 헷갈릴 일은 없을 것 같다!
+https://www.inflearn.com/course/핵심개념-javascript-flow
