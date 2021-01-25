@@ -189,7 +189,7 @@ print(min(b)); # b리스트에서 제일 작은 값 1 출력
 r.shuffle(b); # a 리스트 무작위로 섞기
 print(b);
 
-b.sort(reverse=true) # b리스트 내림차순 정렬
+b.sort(reverse=True) # b리스트 내림차순 정렬
 print(b); # [10, 9 ,8 , 7 , 6 , 5, 4, 3, 2, 1]
 
 b.sort() # b리스트 오름차순 정렬
@@ -210,7 +210,7 @@ b.clear() # b리스트 비우기
 * **min()**: 주어진 인자(리스트)에서 제일 작은 값을 구한다.
 * **r.shuffle()**: random 모듈의 내장함수 shuffle을 사용하여 리스트를 무작위로 섞는다.
 * **.sort()**: 리스트 오름차순 정렬
-* **.sort(reverse)**: 리스트 내림차순 정렬
+* **.sort(reverse=True)**: 리스트 내림차순 정렬
 * **.clear()**: 빈 리스트로 만들기
 
 
