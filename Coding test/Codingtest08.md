@@ -90,7 +90,7 @@ else:
 ## 5. 파이썬 이진 탐색 라이브러리
 
 * bisect_left(a, x) : 정렬된 순서를 유지, 배열 a에 x를 삽입할 가장 왼쪽 인덱스 반환
-* bisect_right(a, x) : 정렬된 순서를 유지, 배열 a에 x를 삽이할 가장 오른쪽 인덱스 반환
+* bisect_right(a, x) : 정렬된 순서를 유지, 배열 a에 x를 삽입할 가장 오른쪽 인덱스 반환
 
 ```python
 from bisect import bisect_left, bisect_right
