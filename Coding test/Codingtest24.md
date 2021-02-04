@@ -117,8 +117,6 @@ average = round((sum(score)/len(score))); # 평균 점수 구하기
 ## 문제 답안
 
 ```python
-import sys
-sys.stdin = open("in1.txt", "rt")
 n = int(input());
 a = list(map(int, input().split()));
 ave = int((sum(a)/n)+ 0.5); # 평균 구하기

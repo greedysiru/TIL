@@ -57,7 +57,7 @@ def Count(len):
     cnt = 1;
     ep = Line[0];
     for i in range(1, n):
-        if Line[i] - ep >= len # 말 사이의 거리
+        if Line[i] - ep >= len: # 말 사이의 거리
             cnt += 1; # 말을 배치
             ep = Line[i];
     return cnt;
@@ -72,7 +72,7 @@ lt = 1;        # 시작점
 rt = Line[n - 1]; # 끝점
 while lt <= rt: # 이분탐색
     mid = (lt + rt) // 2;
-    if count(mid) >= c; # 말의 마리수를 리턴
+    if count(mid) >= c: # 말의 마리수를 리턴
         res = mid;
         lt = mid + 1;
     else:

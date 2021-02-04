@@ -39,7 +39,7 @@ else: # k번째 약수 출력하기
 ```python
 n, k = map(int, input().split()); # 입력받기
 cnt = 0; # 약수 갯수 세기
-for i in range(1, n + 1); # 약수 찾기
+for i in range(1, n + 1): # 약수 찾기
     if n % i == 0:
         cnt +=1 # 약수일시 카운팅
     if cnt == k: # k번째 약수찾으면 출력

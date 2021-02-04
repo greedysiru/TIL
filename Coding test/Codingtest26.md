@@ -49,7 +49,7 @@ for i in range(n): # n만큼 반복
     for j in range(size//2): # 길이의 반만 탐색
         if s[j] != s[-1-j]:  # 문자열의 앞뒤가 같지 않을 경우
             print("#%d NO" %(i + 1));
-            break.          # 문구 출력 후 반복문 중단
+            break          # 문구 출력 후 반복문 중단
     else: 
         print("#%d YES" %(i + 1)); # 이상없이 끝난경우
 ```
@@ -165,7 +165,7 @@ for j in range(1, len(cards)): # 출력하기
 a = list(range(21)) # 0~ 20까지 리스트 생성
 for _ in range(10): # 10번의 구간 받은 만큼 반복
     s, e = map(int, input().split()); # 입력 받기
-    for i in range((e - s + 1)//2) # 카드 바꾸기
+    for i in range((e - s + 1)//2): # 카드 바꾸기
         a[s + i], a[e - i] = a[e - i], a[s + i];
 a.pop(0) # 0번 인덱스 없애기
 for x in a:

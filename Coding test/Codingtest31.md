@@ -34,7 +34,7 @@ for x in num:
         stack.pop();
         m -= 1;
     stack.append(x);
-if m! = 0;
+if m != 0:
     stack = stack[:-m];
 res = ''.join(map(str. tack)); # join으로 붙여서 출력하기
 print(res);
@@ -93,7 +93,7 @@ for i in range(len(s)):
         stack.pop(); # 스택의 마지막 pop
         if s[i - 1] == '(': # 레이저인 경우
             cnt += len(stack);
-          else: # 쇠막대기의 끝인 경우
+        else: # 쇠막대기의 끝인 경우
             cnt += 1;
 print(cnt);
 ```

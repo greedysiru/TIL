@@ -288,7 +288,7 @@ for x in a:     # 양옆에 0 추가
 cnt = 0;
 for i in range(1, n + 1):
     for j in range(1, n + 1):
-        if all(a[i][j] > a[i+dx[k]][j+dy[k]] for k in range(4)); # 안의 조건이 모두 참일 때 참
+        if all(a[i][j] > a[i+dx[k]][j+dy[k]] for k in range(4)): # 안의 조건이 모두 참일 때 참
             cnt += 1;
 print(cnt);       
 ```
@@ -376,7 +376,7 @@ def check(a):
                 return False
     return True
 
-a = [list(map(int, input().split())) for _in range(9)]
+a = [list(map(int, input().split())) for _ in range(9)]
 if check(a):
     print("YES");
 else:

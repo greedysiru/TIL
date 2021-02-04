@@ -224,7 +224,7 @@ def reverse(x): # 뒤집는 함수
 def isPrime(x): # 소수 판별
     if x == 1: # 1은 소수가 아니므로
         return False
-    for i in range(2, x//2) # 절반 판별
+    for i in range(2, x//2): # 절반 판별
         if x % i == 0:
             return False
     else:
