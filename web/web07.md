@@ -14,7 +14,7 @@
 
 
 
-## flask 시작 코드
+## Flask 시작 코드
 
 ```python
 from flask import Flask
@@ -57,7 +57,7 @@ if __name__ == '__main__':
 
 # 2. Flask 시작하기 - HTML 파일 주기
 
-## flask의 기본 폴더구조
+## Flask의 기본 폴더구조
 
 * 프로젝트 폴더 안에 **항상 아래처럼 세팅**한다.
   * **static 폴더**: 이미지, css파일을 넣는다.
