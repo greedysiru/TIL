@@ -2,7 +2,7 @@
 
 
 
-**본 내용은 스파르타코딩 웹개발 종합반 강의를 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/171) 참고**
 
 
 
@@ -305,5 +305,35 @@ kill -9 [pid값]
 
 ![web10-6](images/web10-6.png)
 
-# 느낀점
 
+
+# 10. og 태그 만들기
+
+* 카톡 / 페이스북 / 슬랙 등에서 페이지를 공유했을 때, og태그를 사용하면 그것을 보여준다.
+
+![10-7](images/10-7.png)
+
+## og 태그 삽입
+
+* static 폴더에 원하는 이미지를 넣는다.**(800 * 400)**
+* 프로젝트 **HTML의 head에 아래의 코드를 입력**
+
+```HTML
+<meta property="og:title" content="내 사이트의 제목" />
+<meta property="og:description" content="보고 있는 페이지의 내용 요약" />
+<meta property="og:image" content="{{ url_for('static', filename='ogimage.png') }}" />
+```
+
+
+
+## og 태그 초기화
+
+* 변경한 og태그를 적용한다.
+
+>  https://developers.facebook.com/tools/debug/
+>
+>  https://developers.kakao.com/tool/clear/og
+
+# Reference
+
+**스파르타코딩 - 웹개발 종합반**
