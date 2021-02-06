@@ -259,7 +259,51 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-po
 
 
 
+# 8. nohup 설정하기
 
+* SSH 접속을 끊어도 서버가 계속 돌게 한다.
+
+## 쉘 명령어
+
+* 서버 돌아가게 하기
+
+```shell
+nohup python app.py &
+```
+
+* 서버 프로세스 보기
+
+```shell
+ps -ef | grep 'app.py'
+```
+
+* 서버 종료하기 - 강제종료
+
+```shell
+kill -9 [pid값]
+```
+
+
+
+# 9. 도메인 구매 / 연결하기
+
+* [가비아](https://my.gabia.com/service#/)에서 도메인을 구입 후 연결할 수 있다.
+
+## 도메인 구입
+
+* 도메인을 구입하는 것은 **네임서버를 운영하는 업체에 IP와 도메인 매칭 유지비를 내는 것이다.**
+
+
+
+## 도메인 연결
+
+*  https://my.gabia.com/service#/
+* **DNS 관리툴 -> 도메인 연결 -> DNS 설정**
+* 아래와 같이 입력한다.
+  * **호스트** : @
+  * **값 / 위치** : ec2 IP
+
+![web10-6](images/web10-6.png)
 
 # 느낀점
 
