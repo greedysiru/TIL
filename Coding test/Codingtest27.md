@@ -17,8 +17,6 @@
 ## 문제 풀이
 
 ```python
-import sys
-sys.stdin = open("in5.txt", "rt")
 n = int(input());
 arr = [list(map(int, input().split())) for _ in range(n)]; # 2차원 리스트로 입력 받기
 arrSum = 0 ; # 합
