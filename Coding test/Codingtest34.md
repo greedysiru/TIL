@@ -2,6 +2,8 @@
 
 
 
+**본 내용은 해당 [강의](https://www.inflearn.com/course/파이썬-알고리즘-문제풀이-코딩테스트/dashboard) 토대로 작성**
+
 # 1. 응급실(큐)
 
 ## 나의 전략
