@@ -240,7 +240,7 @@ function saveName(text){
     localStorage.setItem(USER_LS, text); // local storage에 USER_LS(currentUSer) 저장
 }
 
-function hadleSubmit(evnet){
+function hadleSubmit(event){
     event.preventDefault(); // document를 보내는 event를 막는다.
     const currentValue = input.value; // input에서 입력된 value를 받는다.
     paintGreeting(currentValue); // value를 받고 form을 지우고 문구에 value를 더해 출력한다.
