@@ -2,7 +2,7 @@
 
 
 
-**본 내용은 해당 [강의](https://www.codeit.kr/courses/web-publishing/topics/getting-started-with-html-css) 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/193?category=860702) 참고**
 
 # 수업 소개
 
@@ -311,6 +311,6 @@
 * 태그 내에 style 속성 주기
 * **CSS 파일 따로 쓰기 / link로 연결**
 
-# 느낀점
+# Reference
 
-오랜만에 HTML/CSS를 복습했다.
+[코드잇 - HTML/CSS 시작하기](https://www.codeit.kr/courses/web-publishing/topics/getting-started-with-html-css)
