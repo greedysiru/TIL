@@ -71,7 +71,7 @@
 
 > **object.propertyName1.propertyName2**
 >
-> **object.porpertyname1['propertyname2']**
+> **object.porpertyName1['propertyname2']**
 
 
 
