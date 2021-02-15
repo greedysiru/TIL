@@ -19,9 +19,6 @@
 ## 문제 풀이
 
 ```python
-import sys
-sys.stdin = open("in1.txt", "rt")
-
 def DFS(L):
     global cnt; # 글로벌 변수
     if L == m: # 종료
@@ -110,6 +107,7 @@ if __name__ == "__main__":
 ## 문제 풀이
 
 ```python
+import sys
 def DFS(L):
     global totalSum;
     if L == n:
@@ -149,6 +147,7 @@ if __name__ == "__main__":
 ## 문제 답안
 
 ```python
+import sys
 def DFS(L, sum):
     if L == n and sum == f: # 종료지점
         for x in p:
