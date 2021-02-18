@@ -246,8 +246,8 @@ siru를 제외한 가장 높은 요소는 greedy이다. 그래서 greedy가 위�
 
 ### 세로 가운데 정렬
 
-* inline-height 속성 주기
-  * **부모요소에는 inline-height와 속성값, 자식요소에는 inline-height: normal**
+* line-height 속성 주기
+  * **부모요소에는 line-height와 속성값, 자식요소에는 line-height: normal**
 
 * 비어있는 요소 더하기
   * **height: 100% , vertical-align: middle**
