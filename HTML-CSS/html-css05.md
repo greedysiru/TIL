@@ -250,7 +250,7 @@ siru를 제외한 가장 높은 요소는 greedy이다. 그래서 greedy가 위�
   * **부모요소에는 line-height와 속성값, 자식요소에는 line-height: normal**
 
 * 비어있는 요소 더하기
-  * **height: 100% , vertical-align: middle**
+  * **display: inline-block, height: 100% , vertical-align: middle**
 
 ```HTML
 <div class="container">
