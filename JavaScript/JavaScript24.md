@@ -163,4 +163,4 @@ btn.onclick = function() { // 이벤트 핸들러(Event Handler)
 
 # Reference
 
-[코드잇 - JavaScript 중급](https://www.codeit.kr/courses/javascript-intermediate)
+[코드잇 - 인터랙티브 자바스크립트](https://www.codeit.kr/courses/javascript-intermediate/topics/interactive-javascript)
