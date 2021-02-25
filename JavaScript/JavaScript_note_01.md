@@ -1,7 +1,5 @@
 # JavaScript 노트 (01)
 
-[TOC]
-
 ## Math
 
 ### 절댓값 (Absolute Number)
