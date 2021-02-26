@@ -2,7 +2,7 @@
 
 
 
-**본 내용은 해당 [강의](https://www.codeit.kr/courses/jquery/topics/making-use-of-jquery) 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/232?category=860707) 참고**
 
 
 
@@ -225,6 +225,7 @@ $('#btn-1').siblings().text('SELECTED!');
 // btn-1의 모든 이웃 요소의 text를 변경
 ```
 
-# Comment
+# Reference
 
-요소를 추가하는 것에서 제이쿼리가 자바스크립트보다 압도적으로 편한 것 같다!
+[코드잇 - jQuery 활용하기](https://www.codeit.kr/courses/jquery/topics/making-use-of-jquery)
+
