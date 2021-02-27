@@ -153,11 +153,11 @@ $('.go-to-top').on('click'. function(){
 
 ## 04. each
 
-> $('selector').each(function(){
+> **$('selector').each(function(){**
 >
->   block
+>   **block**
 >
-> })
+> **})**
 
 * **유사배열의 각 요소에 대해서 함수를 실행**
 * 조건문과 조합하여 원하는 요소에만 효과를 줄 수 있다.
