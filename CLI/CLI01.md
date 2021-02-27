@@ -41,7 +41,7 @@ mkdir dummy;cd dummy;touch dummy.txt;cod ..;ls -R
 ;(세미콜론)을 사용하여 여려 명령어를 입력할 수 있다. 오기로 인한 시스템 오류를 방지하기 위해서는 세미콜론 대신 `&&`를 사용한다.  
 
 * ## 명령어 정리
-![POSIX_CLI](./images/POSIX_CLI1-1.png)  
+![POSIX_CLI](./images/CLI1-1.png)  
   
 # Reference
 https://opentutorials.org/module/3747
