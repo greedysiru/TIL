@@ -228,8 +228,10 @@ pip install --upgrade pip
 
 ### 패키지 설치
 
+* requests 설치 예시
+
 ```python
-pip install --upgrade pip
+pip install requests
 ```
 
 
