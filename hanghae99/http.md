@@ -96,3 +96,9 @@
 * 사용자의 상태를 유지, 식별할 수 있다.
 * web storage: cookie보다 향상된 기술
 
+
+
+# Reference
+
+[생활코딩 - WEB2 - HTTP](https://opentutorials.org/course/3385)
+
