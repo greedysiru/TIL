@@ -1,4 +1,4 @@
-# [항해99 1기] [Chapter2-1] 자료구조, 알고리즘 (3) (2021.3.8)
+# [항해99 1기] [Chapter2-1] 자료구조, 알고리즘 (4) (2021.3.8)
 
 **[Baekjoon Online Judge](https://www.acmicpc.net/)**
 
