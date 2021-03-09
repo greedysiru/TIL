@@ -85,5 +85,5 @@
 
 # Reference
 
-[얄팍한 코딩사전 HTTPS가 뭐고 왜 쓰나요?](https://www.youtube.com/watch?v=H6lpFRpyl14)
+[얄팍한 코딩사전 - HTTPS가 뭐고 왜 쓰나요?](https://www.youtube.com/watch?v=H6lpFRpyl14)
 
