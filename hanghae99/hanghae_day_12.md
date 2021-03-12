@@ -151,7 +151,7 @@ for x in sortArr:
 
 # 1316
 
-[문제 풀이](https://www.acmicpc.net/problem/1316)
+[문제 링크](https://www.acmicpc.net/problem/1316)
 
 ```python
 # 단어의 개수 입력 받기
@@ -261,7 +261,7 @@ for _ in range(t):
 
 #  4948
 
-[문제 풀이](https://www.acmicpc.net/problem/4948)
+[문제 링크](https://www.acmicpc.net/problem/4948)
 
 ```python
 # 베르트랑 공준
@@ -300,3 +300,38 @@ while True:
         print(cnt)
 ```
 
+
+
+# 1436
+
+[문제 링크](https://www.acmicpc.net/problem/1436)
+
+```python
+# n번째 영화를 출력
+n = int(input())
+# 카운트
+cnt = 0
+# 시작수
+num = 666
+# 숫자를 받을 리스트
+arrNum = []
+# 무한루프 반복문으로 n번째 영화를 출력
+while True:
+    # 숫자 탐색을 위해 문자열로 바꾸기
+    strNum = str(num)
+    # 문자열로 바꾼 숫자에 "666"이 있으면 카운트
+    if "666" in strNum:
+        cnt += 1
+        # 주어진 카운트 수를 만족하면 num 프린트 후 break
+        if cnt == n:
+            print(num)
+            break
+    # 찾는 수가 나오지 않았으므로 1 더하기
+    num += 1
+```
+
+
+
+## Comment
+
+브루트 포스 알고리즘 문제이다. 처음에 보고 어? 너무 쉽잖아 하고 문자열로 답을 만들려고 했는데 잘못 이해한 것이었다. 제대로 이해하고 난 후 구현하는 것은 어렵지 않았다. 문자열 또한 in을 사용할 수 있는 것을 잘 기억하자.
