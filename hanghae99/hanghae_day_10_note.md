@@ -144,7 +144,7 @@ print(merge_sort(arr))
 * Last In First Out
 
   * LIFO
-  * 넣은 순석 ㅏ필요한 경우
+  * 넣은 순서가 필요한 경우
 
 * 제공하는 기능
 
