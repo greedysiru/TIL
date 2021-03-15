@@ -295,7 +295,7 @@ def putQ(L):
 
 # N x N인 체스판 위에 퀸 N개를 서로 공격할 수 없게 놓는 경우의 수 구하기
 N = int(input())
-# 퀸이 놓인 행이 인덱스이고 열이 그 값인 배열 선언
+# 퀸이 놓인 행이 인덱스이고 열이 그 값인 리스트 선언
 # 0은 안 놓여있다는 표시
 Q = [0] * N
 # 경우의 수
@@ -319,6 +319,345 @@ pypy3에서도 처음에는 시간초과가 나왔다. check 함수에서 이전
 [문제 링크](https://www.acmicpc.net/problem/2579)
 
 ```python
- 
+import sys
+# 계단의 수
+N = int(input())
+# 계단 입력 받기
+stair = [0] * N
+for i in range(N):
+    stair[i] = int(input())
+
+# N이 1이면 계단이 하나이므로 그것을 바로 출력 후 종료
+# N이 2이면 계단이 두개이므로 그것을 바로 출력 후 종료
+if N == 1:
+    print(stair[0])
+    sys.exit(0)
+elif N == 2:
+    print(stair[0] + stair[1])
+    sys.exit(0)
+# 메모이제이션
+# 각 위치에서의 최대 점수를 기록하기
+# 0번 위치에서의 최댓값은 자기 자신
+# 1번 위치에서 최댓값은 0번 위치와 1번 위치의 계단을 더한 값
+# 2번 위치에서 최댓값은 0번 위치와 2번 위치의 계단을 더한 값과 1번 위치와 2번위치의 계단을 더한 값중 큰 값
+memo = {
+    0: stair[0],
+    1: stair[0] + stair[1],
+    2: max(stair[0] + stair[2], stair[1] + stair[2])
+}
+
+# 계단 점수 구하기
+def score(N):
+    # 메모이제이션이 된 값이라면 바로 해당 값 리턴
+    if N in memo.keys():
+        return memo[N]
+    # 아닌 경우
+    else:
+        # N위치에서의 점수 점화식을 재귀적으로 표현
+        # 두 가지의 경우
+        # 1. 현위치에서 직전 계단을 밟은 경우
+        # 2. 현위체에서 직접 계단을 밟지 않은 경우
+        up1 = score(N - 3) + stair[N - 1] + stair[N]
+        up2 = score(N - 2) + stair[N]
+        memo[N] = max(up1, up2)
+        return memo[N]
+
+# 점수 출력하기
+print(score(N - 1))
 ```
 
+
+
+## Comment
+
+점화식을 쓸 때 문제의 주어진 조건을 만족할 수 있도록 하자.
+
+
+
+# 1002
+
+[문제 링크](https://www.acmicpc.net/problem/1002)
+
+```python
+# 테스트 케이스 T
+T = int(input())
+# 좌표 입력 받기
+for _ in range(T):
+    x1, y1, r1, x2, y2, r2 = map(int, input().split())
+    # 두 좌표 (x1, y1), (x2, y2)에서 r1, r2만큼 각각 떨어진 점은 각각의 좌표에서 r1, r2 만큼 떨어진 원의 경계선이다.
+    # 그러므로 r1, r2는 각 원의 반지름
+    # 각 좌표를 중심으로 하는 두 원의 위치관계를 이용해서 판별할 수 있음
+    # 두 원의 중심 간 거리
+    d = (((x1 - x2) ** 2) + ((y1 - y2) ** 2)) ** 0.5
+    # 두 반지름 중 큰 것
+    maxR = max(r1, r2)
+    # 두 반지름 중 작은 것
+    minR = min(r1, r2)
+    # d == 0 인 조건을 우선적으로 볼 것
+    # 동심원인 경우
+    if d == 0 and maxR > minR:
+        print(0)
+    # 겹치는경우
+    # 위치의 개수가 무한대
+    elif d == 0 and maxR == minR:
+        print(-1)
+    # 두 점에서 만나는 경우
+    # 두 원 서로 겹치는 것
+    elif (maxR - minR) < d and d < (maxR + minR):
+        print(2)
+    # 한 점에서 만나는 경우
+    # 두원이 한 점에서 겹치는 것
+    # 외접
+    elif maxR + minR == d:
+        print(1)
+    # 내접
+    elif maxR - minR == d:
+        print(1)
+    # 만나지 않을 경우
+    # 두 원이 외부로 떨어짐
+    elif maxR + minR < d:
+        print(0)
+    # 두 원이 내부에서 만나지 않음
+    elif maxR - minR > d:
+        print(0)
+```
+
+
+
+# 2798
+
+[문제 링크](https://www.acmicpc.net/problem/2798)
+
+```python
+# 조합을 사용하기 위한 itertools 가져오기
+import itertools
+
+# 카드의 개수 N, 목표로 하는 합 M
+# M을 넘지 않아야 함
+N, M = map(int, input().split())
+# 카드 리스트 받기
+card = list(map(int, input().split()))
+
+# 최대합
+res = 0
+
+# 각 카드 조합의 합
+sum_c = 0
+
+# 카드 리스트에서 3개 뽑은 조합을 넣기
+for cards in itertools.combinations(card, 3):
+    # 카드 조합에서 카드 하나하나를 더하기
+    for card in cards:
+        sum_c += card
+    # 합이 M이하이고 res보다 크면 res를 최신화
+    if M >= sum_c and res < sum_c:
+        res = sum_c
+    # 다시 sum_c를 초기화
+    sum_c = 0
+
+print(res)
+```
+
+
+
+## Comment
+
+itertools 라이브러리를 사용해서 카드 조합을 만들고 각 카드 조합의 합들을 구한 뒤 조건을 충족하는 것을 고르고 출력했다.
+
+
+
+# 2231
+
+[문제 링크](https://www.acmicpc.net/problem/2231)
+
+```python
+# 자연수  N의 가장 작은 생성자 구하기
+N = int(input())
+# 가장 작은 생성자 찾기
+# 0부터 주어진 수까지 숫자 하나하나를 검사
+for i in range(N + 1):
+    # 문자열로 변환
+    num_str = str(i)
+    # 숫자의 길이
+    length = len(num_str)
+    # 분해합 구하기
+    # 자기 자신으로 초기화
+    num_sum = i
+    # 자기 자신의 길이만큼 숫자 하나 하나 빼서 더하기
+    for j in range(length):
+        num_sum += int(num_str[j])
+    # 분해합이 같으면 i가 생성자
+    if N == num_sum:
+        print(i)
+        break
+# 아니라면 0 출력
+else:
+    print(0)
+```
+
+
+
+## Comment
+
+브루트포스로 작은수부터 생성자 조건에 맞는지 검사하였다.
+
+
+
+# 1541
+
+[문제 링크](https://www.acmicpc.net/problem/1541)
+
+ ```python
+# 식 입력 받기
+# -기준으로 나누어 리스트로 받기
+ex = input().split("-")
+
+
+# ex리스트를 처음부터 끝까지 탐색
+for i in range(len(ex)):
+    # +가 있으면 그 위치인 양수가 리턴
+    if ex[i].find("+") > 0:
+        # +가 있는 문자열을 다시 + 기준으로 나누기
+        sum_ex_arr = ex[i].split("+")
+        # 합을 넣을 변수
+        sum_ex = 0
+        for j in range(len(sum_ex_arr)):
+            # 숫자의 합 넣기
+            sum_ex += int(sum_ex_arr[j])
+        # 숫자의 합을 원래 자리에 넣어주기
+        ex[i] = sum_ex
+
+# 합을 적용한 리스트를 토대로 -연산을 실행
+minus_ex = int(ex[0])
+for k in range(1, len(ex)):
+    # 1번 인덱스부터 뺄셈하기
+    minus_ex -= int(ex[k])
+
+# 답출력
+print(minus_ex)
+ ```
+
+
+
+## Comment
+
+입력 받은 식을 마이너스 기호 기준으로 slplit 하면 리스트 형태로 나누어진다. 그러면 각 요소는 숫자 또는 숫자와 플러스기호가 있는 상태이기 때문에 플러스 기호가 있는 부분을 각 숫자를 합해주고 최종적으로는 뺄셈 연산을 해준다.
+
+
+
+# 11866
+
+[문제 링크](https://www.acmicpc.net/problem/11866)
+
+```python
+# 큐 자료구조 사용
+from collections import deque
+# N: 사람수, K: 제거할 번호
+N, K = map(int, input().split())
+# 사람수만큼 리스트 생성후 큐로 변환
+circle = deque([i for i in range(1, N + 1)])
+# k번째가 아닐 때는 popleft를 하고 다시 append
+# K번째는 popleft를 하고 그 요소를 별도의 리스트에 넣기
+# 순서를 셀 i
+i = 1
+# 제거한 요소를 넣을 리스트
+remove_arr = []
+while circle:
+    if i < K:
+        # 뒤로 옮기기
+        move = circle.popleft()
+        circle.append(move)
+        i += 1
+    elif i == K:
+        # 제거 리스트에 넣기
+        remove = circle.popleft()
+        remove_arr.append(remove)
+        # i 초기화
+        i = 1
+
+print("<", end="")
+print(*remove_arr, end="", sep=", ")
+print(">", end="")
+```
+
+
+
+## Comment
+
+while문과 별도의 변수를 사용하여 회전하는 효과를 넣어서 풀 수 있었다.
+
+
+
+# 1992
+
+[문제 링크](https://www.acmicpc.net/problem/1992)
+
+```python
+# 영상의 크기를 나타내는 숫자 N
+N = int(input())
+# 영상 정보 받기
+V = [list(str(input())) for _ in range(N)]
+# 문자열을 정수화
+for row in range(N):
+    V[row] = list(map(int, V[row]))
+
+# 압축된 영상 정보를 받을 리스트
+comp_V = []
+
+# 영상의 모든 요소의 합을 구하는 함수
+def total_V(V, side):
+    # 합을 저장할 변수 선언
+    sum_V = 0
+    # V의 각 줄의 합을 누적
+    for row in range(side):
+        sum_V += sum(V[row])
+    # 구한 합을 리턴
+    return sum_V
+
+# 영상을 4개로 분할하는 함수
+def div_V(V, side):
+    # 나눴을 때 여는 괄호 출력
+    print("(", end="")
+    # 중간값
+    mid = side // 2
+    # 4개의 부분을 각각 이차원 슬라이싱
+    v1 = [row[:mid] for row in V[:mid]]
+    v2 = [row[mid:] for row in V[:mid]]
+    v3 = [row[:mid] for row in V[mid:]]
+    v4 = [row[mid:] for row in V[mid:]]
+    # 나눈 부분으로 다시 check_V 함수 호출
+    check_V(v1)
+    check_V(v2)
+    check_V(v3)
+    check_V(v4)
+    # 나누고 나서 닫는 괄호 출력
+    print(")", end="")
+    return
+
+# 영상 정보가 0이나 1로만 되어있는 지 체크하는 함수
+def check_V(V):
+    # 영상 한 변의 길이
+    side = len(V)
+    # 영상의 모든 요소의 합 구하기
+    sum_V = total_V(V, side)
+    # sum_V가 적절한 값인지 판별
+    # 모든 값이 0이라면 그 총합도 0이므로 0을 print
+    if sum_V == 0:
+        print(0, end="")
+    # 모든 값이 1이라면 그 총합이 변의 제곱이므로 1을 print
+    elif sum_V == (side ** 2):
+        print(1, end="")
+    else:
+        # 위의 조건에 맞지 않으면 0과 1이 섞여있는 것이므로 4개로 분할
+        div_V(V, side)
+    return
+
+# V를 호출
+check_V(V)
+```
+
+
+
+## Comment
+
+2630 종이문제와 거의 똑같은 문제. 단, 괄호를 출력할 때 적절한 부분을 찾는 것이 조금 헷깔렸으나 함수의 호출 순서를 잘 생각하면 찾아낼 수 있었다.
