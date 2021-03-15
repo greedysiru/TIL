@@ -601,9 +601,6 @@ V = [list(str(input())) for _ in range(N)]
 for row in range(N):
     V[row] = list(map(int, V[row]))
 
-# 압축된 영상 정보를 받을 리스트
-comp_V = []
-
 # 영상의 모든 요소의 합을 구하는 함수
 def total_V(V, side):
     # 합을 저장할 변수 선언
