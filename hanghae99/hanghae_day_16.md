@@ -95,8 +95,6 @@ for count in cnt_list:
 
 
 
-
-
 # 11054
 
 [문제 링크](https://www.acmicpc.net/problem/11054)
@@ -157,17 +155,67 @@ print(res - 1)
 
 제일 어려웠던 문제. 복습해야할 것 같다.
 
-
-
 # 1753
 
 [문제 링크](https://www.acmicpc.net/problem/1753)
 
 ```python
+import sys
+import heapq
 
+# 우선순위 큐 사용
+import heapq
+INF = float('inf')  # 무한을 의미하는 값으로 10억을 설정
+
+# 노드의 개수, 간선의 개수를 입력받기
+V, E = map(int, sys.stdin.readline().split())
+# 시작 노드 번호를 입력받기
+start = int(sys.stdin.readline().split()[0])
+# 각 노드에 연결되어 있는 노드에 대한 정보를 담는 리스트를 만들기
+graph = [[] for i in range(V + 1)]
+# 최단 거리 테이블을 모두 무한으로 초기화
+distance = [INF] * (V + 1)
+
+# 모든 간선 정보를 입력받기
+for _ in range(E):
+    u, v, w = map(int, sys.stdin.readline().split())
+    # a번 노드에서 b번 노드로 가는 비용이 c라는 의미
+    graph[u].append((v, w))
+
+def dijkstra(start):
+    q = []
+    # 시작 노드로 가기 위한 최단 경로는 0으로 설정하여, 큐에 삽입
+    heapq.heappush(q, (0, start))
+    distance[start] = 0
+    while q:  # 큐가 비어있지 않다면
+        # 가장 최단 거리가 짧은 노드에 대한 정보 꺼내기
+        dist, now = heapq.heappop(q)
+        # 현재 노드가 이미 처리된 적이 있는 노드라면 무시
+        if distance[now] < dist:
+            continue
+        # 현재 노드와 연결된 다른 인접한 노드들을 확인
+        for i in graph[now]:
+            cost = dist + i[1]
+            # 현재 노드를 거쳐서, 다른 노드로 이동하는 거리가 더 짧은 경우
+            if cost < distance[i[0]]:
+                distance[i[0]] = cost
+                heapq.heappush(q, (cost, i[0]))
+
+# 다익스트라 알고리즘을 수행
+dijkstra(start)
+
+# 모든 노드로 가기 위한 최단 거리를 출력
+for i in range(1, V + 1):
+    # 도달할 수 없는 경우, INF출력
+    if distance[i] == INF:
+        print("INF")
+    # 도달할 수 있는 경우 거리를 출력
+    else:
+        print(distance[i])
 ```
 
 
 
 ## Comment
 
+다익스트라 알고리즘을 복습하여 풀 수 있는 문제였다.
