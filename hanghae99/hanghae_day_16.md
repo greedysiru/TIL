@@ -184,13 +184,17 @@ for _ in range(E):
 
 def dijkstra(start):
     q = []
-    # 시작 노드로 가기 위한 최단 경로는 0으로 설정하여, 큐에 삽입
+    # 시작 노드로 가기 위한 최단 경로는 0으로 설정하여, q에 삽입
+    # 힙정렬 사용 -> 오름차순 정렬
+    # 방문하지 않은 노드 중에서 최단거리가 가장 짧은 노드를 선택할 수 있다.
+    # O(NlogN)
     heapq.heappush(q, (0, start))
     distance[start] = 0
     while q:  # 큐가 비어있지 않다면
         # 가장 최단 거리가 짧은 노드에 대한 정보 꺼내기
         dist, now = heapq.heappop(q)
         # 현재 노드가 이미 처리된 적이 있는 노드라면 무시
+        # 거리값이 테이블의 거리값보다 크면 방문처리가된 정점으로 간주
         if distance[now] < dist:
             continue
         # 현재 노드와 연결된 다른 인접한 노드들을 확인
