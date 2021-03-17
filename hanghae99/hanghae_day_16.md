@@ -188,6 +188,7 @@ def dijkstra(start):
     # 힙정렬 사용 -> 오름차순 정렬
     # 방문하지 않은 노드 중에서 최단거리가 가장 짧은 노드를 선택할 수 있다.
     # O(NlogN)
+    # 큐는 맨 앞의 값을 기준으로 정렬되므로 기존의 순서와바꾸어 입력한다.
     heapq.heappush(q, (0, start))
     distance[start] = 0
     while q:  # 큐가 비어있지 않다면
