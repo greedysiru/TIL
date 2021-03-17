@@ -47,7 +47,7 @@ print(n, m, k)                      # 3 5 7 출력
 import sys # sys 라이브러리 불러오기
 
 # 문자열 입력받기
-data - sys.stdin.readline().rstrip()
+data = sys.stdin.readline().rstrip()
 print(data)
 ```
 
