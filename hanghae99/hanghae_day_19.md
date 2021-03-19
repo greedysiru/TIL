@@ -107,6 +107,46 @@ makeS(0)
 
 [문제 링크](https://www.acmicpc.net/problem/1904)
 
+## 오류가 발생한 코드
+
+```python
+# 자연수 N
+N = int(input())
+# 메모이제이션
+memo = {
+    1: 1,
+    2: 2
+}
+
+
+# 주어진 조건에서 길이가 N인 2진 수열의 개수를 15746으로 나눈 나머지 구하기
+# 주어진 길이에서의 2진 수열의 개수를 구하는 함수 정의
+# 점화식: make_binary(N) = make_binary(N - 2) + make_binary(N - 1)
+def make_binary(N):
+    # 1과 2일때는 메모이제이션된 값 리턴
+    if N == 1:
+        return memo[1]
+    elif N == 2:
+        return memo[2]
+    # N이 memo에 key로 존재하면 해당하는 값 리턴
+    elif N in memo.keys():
+        return memo[N]
+    # 존재하지 않으면 점화식으로 함수 호출, 메모이제이션하기
+    else:
+        # N길이를 갖는 2진 수열은 N-2 때와 N-1 때의 수열의 길이를 합한 것과 같다.
+        memo[N] = (make_binary(N - 1) + make_binary(N - 2)) % 15746
+        # 해당하는 메모이제이션 리턴
+        return memo[N]
+
+
+# N의 길이를 가지는 2진 수열의 개수를 15746으로 나눈 나머지 출력
+print(make_binary(N))
+```
+
+
+
+## 정답
+
 ```python
 # 자연수 N
 N = int(input())
