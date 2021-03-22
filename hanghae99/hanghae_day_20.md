@@ -2,9 +2,9 @@
 
 
 
-# 01. React 프로젝트 만들기
+# 1. React 프로젝트 만들기
 
-## 1. NVM
+## 1.1 NVM
 
 * **Node Version Manager**
 * Node.js의 버전 관리자
@@ -27,7 +27,7 @@ nvm use [사용할 노드 버전]
 
 
 
-## 2. npm, yarn
+## 1.2 npm, yarn
 
 * NPM(Node Package Manager : third-party 패키지를 활용할 수 있다.
 * yarn 또한 패키지 매니저
@@ -79,12 +79,12 @@ yarn start
 
 
 
-# 02. JSX
+# 2. JSX
 
 * JavaScript를 확장한 문법
 * React와 함께 사용
 
-## 1. JSX 규칙
+## JSX 규칙
 
 ### 태그는 닫기
 

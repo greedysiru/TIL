@@ -2,7 +2,7 @@
 
 
 
-# 01. Component
+# 1. Component
 
 > **리액트가 레고라면 컴포넌트는 블록이다.**
 
@@ -11,7 +11,7 @@
 
 
 
-## 1. State와 Props
+## 1.1 State와 Props
 
 * Component에서의 **데이터 관리**
 * **State**
@@ -24,7 +24,7 @@
 
 
 
-## 2. 함수형 Component
+## 1.2 함수형 Component
 
 * 리액트에서 폴더는 소문자로 시작하는 카멜케이스, JS파일, 컴포넌트 이름은 대문자로 시작하는 카멜케이스를 사용한다.
 
@@ -74,7 +74,7 @@ export default App;
 
 
 
-## 3. 클래스형 Component
+## 1.3 클래스형 Component
 
 ### 클래스형 컴포넌트 예시
 
@@ -111,7 +111,7 @@ export default App;
 
 
 
-## 4. Component 간 데이터 넘기기
+## 1.4 Component 간 데이터 넘기기
 
 * 부모 컴포넌트가 가진 state를 자식 컴포넌트에 넘길 수 있다.
 * 함수형 컴포넌트에는 state가 없다.
@@ -142,7 +142,7 @@ render() {
 
 
 
-# 02. React에서 CSS 사용하기
+# 2. React에서 CSS 사용하기
 
 * 스타일을 설정한 별도의 CSS 파일을 만들고 import할 수 있다.
 
