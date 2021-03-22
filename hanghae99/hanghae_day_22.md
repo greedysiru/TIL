@@ -1,6 +1,6 @@
 # [항해99 1기] [Chapter3-1] 주특기 기본 - 프론트의 꽃 리액트 (4) 
 
-# 01. SCSS
+# 1. SCSS
 
 * [공식문서](https://sass-lang.com/documentation)
 * [SCSS와 CSS를 비교할 수 있는 사이트](https://www.sassmeister.com/)
@@ -15,7 +15,7 @@ yarn add node-sass@4.14.1 open-color sass-loader classnames
 
 
 
-## 1. Nesting
+## 1.1 Nesting
 
 * 부모 태그와 자식 태그에 스타일을 줄 때 다른 블럭을 만들지 않아도 된다.
 * 프로퍼티를 축약형으로 묶을 수 있다
@@ -40,7 +40,7 @@ div{
 
 
 
-## 2. 상위 요소 이어쓰기
+## 1.2 상위 요소 이어쓰기
 
 * &로 클래스명, 글자를 이어쓸 수 있다.
 
@@ -58,7 +58,7 @@ div {
 
 
 
-## 3. 변수 사용하기
+## 1.3 변수 사용하기
 
 ```scss
 $defaultSize: 20px;
@@ -72,13 +72,13 @@ p{
 
 
 
-# 02. styled-components
+# 2. styled-components
 
 * 컴포넌트 스타일링 기법 중 하나
 * class 이름 짓기를 할 필요가 없다.
 * 컴포넌트에 스타일을 적으므로 간단하고 직관적
 
-## 1. 패키지 설치
+## 2.1 패키지 설치
 
 ```shell
 yarn add styled-components
@@ -86,7 +86,7 @@ yarn add styled-components
 
 
 
-## 2. 적용 예시
+## 2.2 적용 예시
 
 ```react
 import React from 'react';
@@ -117,9 +117,9 @@ export default App;
 
 
 
-# 03. 라이프 사이클
+# 3. 라이프 사이클
 
-## 1. 가상돔
+## 3.1 가상돔
 
 * DOM: html 단위 하나하나를 객체로 생각하는 모델
   * 태그들을 트리구조로 나타낸다.
@@ -135,7 +135,7 @@ export default App;
 
 
 
-## 2. 라이프 사이클
+## 3.2 라이프 사이클
 
 * **컴포넌트가 렌더링을 준비하는 순간부터, 페이지에서 사라질 때까지**
 
@@ -152,7 +152,7 @@ export default App;
 
 
 
-## 3. 라이프 사이클 함수
+## 3.3 라이프 사이클 함수
 
 * **클래스형 컴포넌트에서만 사용 가능**
 * 함수형 컴포넌트에서도 React Hooks을 이용해 라이프 사이클 함수 대체
@@ -237,7 +237,7 @@ export default LifecycleEx;
 
 
 
-## 4. StirctMode
+## 3.4 StirctMode
 
 * index.js에서 애플리케이션이 문제가 없는 지 검사하는 모드
 * 로컬환경에서만 활성화
@@ -247,14 +247,14 @@ export default LifecycleEx;
 
 
 
-# 04.  리액트에서 돔요소 가져오기
+# 4.  리액트에서 돔요소 가져오기
 
 * JavaScript에서 쿼리셀렉터로 돔요소를 가져오는 것처럼 리액트에서도 가능
 * **리액트 요소에서 가져올 것**
 
 
 
-## 1. React.createRef()
+## 4.1 React.createRef()
 
 ```react
 class MyComponent extends React.Component {
@@ -273,7 +273,7 @@ class MyComponent extends React.Component {
 
 
 
-## 2. Ref에 접근
+## 4.2 Ref에 접근
 
 ```react
 const node = this.myRef.currnet;
