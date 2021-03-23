@@ -100,7 +100,7 @@ export { firestore };
 ### App.js에서 firestore 가져오기
 
 ```shell
-import {firestore} form "./firebase";
+import {firestore} from "./firebase";
 ```
 
 
