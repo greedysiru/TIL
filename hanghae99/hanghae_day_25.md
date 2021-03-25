@@ -9,7 +9,7 @@
 
 
 
-## 0.1 redux-thunk
+## 1.1 redux-thunk
 
 * 객체 대신 함수를 생성하는 액션 생성 함수를 작성 가능
 * 패키지 설치
@@ -41,7 +41,7 @@ export default store;
 
 
 
-## 0.2 리덕스에 Firestore 적용
+## 1.2 리덕스에 Firestore 적용
 
 ### Firebase와 통신하는 함수 만들기
 
