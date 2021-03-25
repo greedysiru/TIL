@@ -36,6 +36,26 @@
 
 
 
+## Components
+
+### 첫 화면
+
+![start](images/start.png)
+
+### 달력
+
+![main](images/main.png)
+
+### 일정 생성
+
+![create](images/create.png)
+
+### 팝업
+
+![popup](images/popup.png)
+
+
+
 ## License
 
 ### MIT
