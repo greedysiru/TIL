@@ -195,26 +195,6 @@ export default Grid;
   * 삼항 연산자 응용하기
   * 최소단위 컴포넌트가 가져야할 기본 css 설정을 작성하기
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Reference
 
 [스파르타코딩클럽 리액트 심화반](https://spartacodingclub.kr/online/react/plus)
