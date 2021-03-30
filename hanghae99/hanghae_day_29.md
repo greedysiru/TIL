@@ -191,6 +191,4 @@ localStorage.clear();
 
 # Reference
 
-# Reference
-
 [스파르타코딩클럽 리액트 심화반](https://spartacodingclub.kr/online/react/plus)
