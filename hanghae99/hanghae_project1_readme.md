@@ -1,4 +1,4 @@
-# react_calendar
+# my_kind_calendar
 
 * [mykindcalendar](http://mykindcalendar.site/)
 
