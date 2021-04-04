@@ -43,10 +43,6 @@ const element = <div className="hi"></div>;
 * 속성에 따옴표를 사용하여 문자열 리터럴을 정의할 수도 있다.
 * 여기서 속성은 소문자로 시작하는 camelCase 규칙을 사용한다.
 
-
-
-
-
 # Reference
 
 [React 공식 문서](https://ko.reactjs.org/)
