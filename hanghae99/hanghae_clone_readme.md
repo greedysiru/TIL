@@ -1,5 +1,9 @@
 # hanghae99_books
 
+[사이트 링크](http://hanghae99books.site/)
+
+[유튜브 링크](https://youtu.be/U8rmn8h4lPw)
+
 **팀 프로젝트의 프론트 엔드 Repository 입니다.**
 
 [백엔드 Repositroy](https://github.com/seongbinko/hanghae99_books)
@@ -65,10 +69,6 @@
 
 - 간단 소개 : 리디 셀렉트의 서적 리뷰 서비스를 클론한 프로젝트
 
-- 사이트 : [hanghae99_books](http://hanghae99books.site/)
-
-- 시연 영상 : [유튜브  링크](https://youtu.be/U8rmn8h4lPw)
-
   
 
   ## 사용 패키지
@@ -113,21 +113,21 @@
 
   ### 메인 페이지
 
-  ![clone-1](file:///Users/jaeminjeon/Documents/Study/Programming/projects/hanghae99_books/images/clone-1.png?lastModify=1617866186)
+  ![clone-1](./images/clone-1.png)
 
   
 
   ### 로그인 및 회원가입 페이지
 
-  ![clone-2](file:///Users/jaeminjeon/Documents/Study/Programming/projects/hanghae99_books/images/clone-2.png?lastModify=1617866186)
+  ![clone-2](./images/clone-2.png)
 
-  ![clone-3](file:///Users/jaeminjeon/Documents/Study/Programming/projects/hanghae99_books/images/clone-3.png?lastModify=1617866186)
+  ![clone-3](./images/clone-3.png)
 
   
 
   ### 도서 상세 정보 페이지
 
-  ![clone-4](file:///Users/jaeminjeon/Documents/Study/Programming/projects/hanghae99_books/images/clone-4.png?lastModify=1617866186)
+  ![clone-4](./images/clone-4.png)
 
   
 
@@ -135,7 +135,7 @@
 
   ### 리뷰 리스트 및 리뷰 작성 폼
 
-  ![clone-5](file:///Users/jaeminjeon/Documents/Study/Programming/projects/hanghae99_books/images/clone-5.png?lastModify=1617866186)
+  ![clone-5](./images/clone-5.png)
 
   
 
