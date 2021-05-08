@@ -46,3 +46,5 @@
 * 위치 선택 페이지 작업
 * 카카오 공유 기능 이미지 추가
 * preference 실시간 적용
+* history.push -> replace로 바꾸기
+
