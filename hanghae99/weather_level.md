@@ -90,7 +90,7 @@
         <ShowButton onClick={handleRangeHidden}>
           {isHidden ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}
         </ShowButton>
-      </RangeWrapper>
+</RangeWrapper>
 ```
 
 - 터치이벤트 버블링 방지 함수 정의
