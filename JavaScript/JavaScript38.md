@@ -1,6 +1,6 @@
 # [드림코딩 by 엘리] JavaScript 기초 강의(8) (ES5+)
 
-**본 내용은 해당 [강의](https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=1) 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/545) 참고**
 
 # Array APIs
 
@@ -124,3 +124,9 @@ array.sort((a, b) => b - a);
 
 * 콜백 함수에 a, b(이전값, 현재값)이 전달
 * -값을 return하면 첫번째가 뒤보다 작다고 간주되어 정렬된다.
+
+
+
+# Reference
+
+[드림엘리 코딩 - 자바스크립트 기초 강의](https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=1)
