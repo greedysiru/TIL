@@ -1,6 +1,6 @@
 # [드림코딩 by 엘리] JavaScript 기초 강의(11) (ES5+)
 
-**본 내용은 해당 [강의](https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=1) 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/567) 참고**
 
 
 
@@ -219,3 +219,8 @@ userStorage.loginUser(id, password)
 .catch(console.log);
 ```
 
+
+
+# Reference
+
+[드림엘리 코딩 - 자바스크립트 기초 강의](https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=1)

@@ -1,6 +1,6 @@
 # [드림코딩 by 엘리] JavaScript 기초 강의(10) (ES5+)
 
-**본 내용은 해당 [강의](https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=1) 토대로 작성**
+**상세 내용 [블로그](https://greedysiru.tistory.com/566) 참고**
 
 
 
@@ -140,3 +140,9 @@ userStorage.loginUser(
   * 비지니스 로직을 파악하기 어렵다.
 * 디버깅, 에러 처리가 어렵다.
 * 유지보수가 어렵다
+
+
+
+# Reference
+
+[드림엘리 코딩 - 자바스크립트 기초 강의](https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=1)
