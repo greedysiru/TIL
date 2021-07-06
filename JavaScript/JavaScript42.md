@@ -180,3 +180,4 @@ pickOnlyOne().then(console.log);
 # Reference
 
 [드림엘리 코딩 - 자바스크립트 기초 강의](https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=1)
+
