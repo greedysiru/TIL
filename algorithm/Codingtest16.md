@@ -58,7 +58,7 @@
 ### 트리의 순회 (Tree Traversal)
 
 * 노드를 특정한 방법으로 한 번씩 방문하는 방법을 의미
-  * 트리의 정볼르 시각적으로 확인할 수 있다.
+  * 트리의 정보를 시각적으로 확인할 수 있다.
 * **대표적인 트리 순회 방법**
   * **전위 순회(pre-order traverse)**: 루트를 먼저 방문
   * **중위 순회(in-order traverse)**: 왼쪽 자식을 방문한 뒤에 루트를 방문
@@ -75,7 +75,7 @@
 ```
 7
 A B C
-B D Ee
+B D E
 C F G
 D None None
 E None None
