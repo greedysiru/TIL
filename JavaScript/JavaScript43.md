@@ -80,4 +80,4 @@ addFun(1, 2);
 
 # Reference
 
-[JavaScript 함수](https://greedysiru.tistory.com/597)
+[JavaScript 함수](https://www.youtube.com/watch?v=PuG2VW18O1E&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=14)
