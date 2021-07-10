@@ -4,11 +4,11 @@
 
 * Hooks는 사용하기 위해 react로부터 import 해야한다.
 * 함수형 프로그래밍을 할 수 있다.
-* `componentDidMount` 에서 이벤트 리스너를 설정, `componentWillUnmount`에서 cleanup 로직을 수행할 때 버그가 쉽게 발생하고 무결성을 해침
+* **componentDidMount** 에서 이벤트 리스너를 설정, **componentWillUnmount**에서 cleanup 로직을 수행할 때 버그가 쉽게 발생하고 무결성을 해침
   * 개념상 똑같은 effect라도 생명주기 메소드는 이를 분리하게 함
   * 오히려 관련이 없는 로직을 모아 놓음
 * Hook을 통해 서로 비슷한 것을 하는 작은 함수의 묶음으로 컴포넌트를 나눈다.
-* Class의 `this` 키워드는 혼동을 일으키고 코드 재사용성과 구성을 어렵게 함
+* Class의 **this** 키워드는 혼동을 일으키고 코드 재사용성과 구성을 어렵게 함
   * Hook은 Class없이 React 기능을 사용하는 방법을 제시
 * React에서는 기본 내장 Hook을 제공한다.
   * custom hook을 만들기도 가능
@@ -36,9 +36,9 @@
 
   * 배열 구조 분해로 각각을 받아올 수 있다.
 
-* **class component**에서 `this.setState`와 유사
+* **class component**에서 **this.setState**와 유사
 
-  * `this.state` 는 객체지만, Hook의 state는 객체일 필요가 없음
+  * **this.state** 는 객체지만, Hook의 state는 객체일 필요가 없음
 
 * 여러 개를 사용할 수 있다.
 
@@ -66,6 +66,7 @@ const App = () => {
     </>
   );
 };
+
 ```
 
 
@@ -81,9 +82,9 @@ const App = () => {
 * **function component** 안에서 **side effects**를 수행할 수 있게 한다.
 
   * side effects: 컴포넌트 안에서 데이터를 가져오거나 구독, DOM을 직접 조작하는 것
-  * **class component**의 `componentWillUnmount, componentDidMount, componentDidUpdate`를 하나의 API로 통합
+  * **class component**의 **componentWillUnmount, componentDidMount, componentDidUpdate**를 하나의 API로 통합
 
-* `useEffect` 를 사용하면 React는 DOM을 바꾼 후 **effect** 함수를 실행
+* **useEffect** 를 사용하면 React는 DOM을 바꾼 후 **effect** 함수를 실행
 
   * 렌더링 이후, 어떤 일을 수행
 
@@ -99,17 +100,17 @@ const App = () => {
   * Component가 화면에 나왔을 때 또는 새로고침 하였을 때 -> componentDidMount -> useEffect 실행
   * state가 업데이트 되엇을 때 -> componentDidUpdate -> useEffect 실행
 
-* **effect**를 해제하려면 `return`으로 반환한다.
+* **effect**를 해제하려면 **return**으로 반환한다.
 
   * component가 unmount될 때 해제된다.
 
-* 컴포넌트 내에서 여러 개의 `useEffect` 사용 가능
+* 컴포넌트 내에서 여러 개의 **useEffect** 사용 가능
 
-* `useEffect` 에서 사용되는 effect는 브라우저가 화면을 업데이트하는 것을 차단하지 않는다.
+* **useEffect** 에서 사용되는 effect는 브라우저가 화면을 업데이트하는 것을 차단하지 않는다.
 
   * 애플리케이션의 반응성 향상
   * 비동기적으로 실행
-  * `useLayoutEffect`: `useEffect` 와 동일한 API를 사용하며 동기적으로 실행
+  * **useLayoutEffect**: **useEffect** 와 동일한 API를 사용하며 동기적으로 실행
 
   
 
@@ -121,7 +122,7 @@ const App = () => {
 
 * 정리 (clean up)를 해야하는 이유?
   * 메모리 누수가 발생하지 않도록 하기 위해서
-  * class에서는 `componentDidMount` 에서 구독, `componentWillUnmount` 에서 정리.
+  * class에서는 **componentDidMount** 에서 구독, **componentWillUnmount** 에서 정리.
 
 ### 예시
 
@@ -249,7 +250,7 @@ componentDidMount() {
 
 </br>
 
-* 그러므로 `componentDidUpdate` 를 사용하여 반영되도록 아래처럼 추가한다.
+* 그러므로 **componentDidUpdate** 를 사용하여 반영되도록 아래처럼 추가한다.
 
 ```React
 componentDidMount() {
@@ -282,7 +283,7 @@ componentDidMount() {
 
 </br>
 
-* `useEffect` 를 사용하면 기본적으로 업데이트를 다루므로 특별한 코드 없이 간단하게 작성하면 된다. 다음의 effect를 다루기 전에 이전의 effect를 정리하기 때문이다.
+* **useEffect** 를 사용하면 기본적으로 업데이트를 다루므로 특별한 코드 없이 간단하게 작성하면 된다. 다음의 effect를 다루기 전에 이전의 effect를 정리하기 때문이다.
 
  ```React
  ...
@@ -310,7 +311,7 @@ componentDidMount() {
 ```React
 componentDidUpdate(prevProps, prevState) {
   if (prevState.count !== this.state.count) {
-    document.title = `You clicked ${this.state.count} times`;
+    document.title = **You clicked ${this.state.count} times**;
   }
 }
 ```
@@ -323,7 +324,7 @@ componentDidUpdate(prevProps, prevState) {
 
 ```React
 useEffect(() => {
-  document.title = `You clicked ${count} times`;
+  document.title = **You clicked ${count} times**;
 }, [count]); // count가 바뀔 때만 effect를 재실행
 ```
 
