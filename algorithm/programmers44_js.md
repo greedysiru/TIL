@@ -34,12 +34,6 @@ function solution(s) {
 
 
 
-## Comment
-
-`dirs`를 하나씩 접근하며 캐릭터의 좌표가 범위를 벗어나지 않는지 확인하고 이동처리한다. 그리고 이동 경로를 기록할 때, 정방향과 역방향을 같이 기록해야 추후, 경로 카운트가 겹치지 않는다.
-
-
-
 ## Reference
 
 [프로그래머스](https://programmers.co.kr)
