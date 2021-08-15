@@ -196,9 +196,6 @@ module.exports = {
 ```
 
 
-
-# Reference
-
 # Reference
 
 [[인프런]프론트엔드 개발환경의 이해와 실습 (webpack, babel, eslint..)](https://www.inflearn.com/course/프론트엔드-개발환경/dashboard)
