@@ -236,7 +236,7 @@ module.exports = {
 ### MiniCssExtractPlugin
 
 * 3rd party package
-* 스타일시트가 점점 많아지면 하나의 JavaScript 결과물로 만드느는 것이 부담
+* 스타일시트가 점점 많아지면 하나의 JavaScript 결과물로 만드는 것이 부담
 * 번들 결과에서 스타일시트 코드만 뽑아, 별도의 CSS 파일로 만들어 역할에 따라 파일을 분리하는 것이 좋음
   * JavaScript파일 하나, CSS파일 하나
 * 브라우저에서 큰 파일 하나를 내려받는 것보다, 여러 개의 작은 파일을 동시에 다운로드하는 것이 빠르기 때문
