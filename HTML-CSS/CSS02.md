@@ -304,7 +304,7 @@ document.qureySelector(".tab").addEventListener("click", (event) => {
   * **block-name__element-name**
 * 항상 Block의 부분이어야 한다.
 * 모든 Block이 Element를 가지는 것은 아니다.
-* Element는 서로 중첩될 수 있다.
+* Element는 서로 중첩될 수 없다.
   * 다른 Element의 부분이 될 수 없다.
 
 ```HTML
