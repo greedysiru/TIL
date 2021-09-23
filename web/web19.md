@@ -141,5 +141,5 @@
 
 # Reference
 
-[[10분 테코톡] 디토의 이벤트루프](https://www.youtube.com/watch?v=-4ZsGy1LOiE)
+[[10분 테코톡] 디토의 웹스토리지 & 쿠키](https://www.youtube.com/watch?v=-4ZsGy1LOiE)
 
