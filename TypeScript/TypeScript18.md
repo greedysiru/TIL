@@ -80,12 +80,6 @@ pets.reduce((total, currentItem) => {
 }, 0; // 9
 ```
 
-
-
-
-
-
-
 # Reference
 
 [실전 프로젝트로 배우는 타입스크립트](https://www.inflearn.com/course/타입스크립트-실전/dashboard)
