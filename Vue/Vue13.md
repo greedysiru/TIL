@@ -6,7 +6,7 @@
 
 ## 1. 로컬스토리지에 객체 저장하고 사용하기
 
-### JSON.stringfy()
+### JSON.stringify()
 
 * JavaScript 값이나 객체를 JSON 문자열로 변환하는 API
 * 로컬스토리지에 value를 넣기 위해서는 문자열로 변환해야 함
@@ -115,8 +115,6 @@ created: function() {
 ...
 </style>
 ```
-
-
 
 
 
