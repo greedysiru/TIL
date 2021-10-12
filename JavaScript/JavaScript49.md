@@ -186,12 +186,7 @@ const mappedArr = arr.map(callback).take(2);
 console.log(mappedArr);
 ```
 
-
-
-
-
-
-
 # Reference
 
 [[10분 테코톡] 파노의 Generator & Iterator](https://www.youtube.com/watch?v=3uuBHt_SNTA)
+
