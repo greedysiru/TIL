@@ -205,7 +205,9 @@ export default {
 
 ### 문법
 
-> **<transition-group name="클래스명" tag="적용할 태그명">**
+```
+**<transition-group name="클래스명" tag="적용할 태그명">**
+```
 
 * name 속성에 list속성을 지정하면
   * list-enter, list-enter-to, list-leave, list-leave-to 클래스가 생성
