@@ -1,0 +1,64 @@
+
+
+# Flex Layout
+
+**본 내용은 10분 테코톡 콜린님의 강의를 토대로 작성하였습니다.**
+
+## 1. Layout
+* HTML, CSS에서 레이아웃이란 문서 위에 상자를 적절한 위치에 배치하는 방법을 의미
+
+### nomal flow
+* 브라우저 기본값으로 HTML 페이지를 배치하는 방법
+* block, inline 두 가지의 방법 존재
+* nomal flow로만 화면을 구성하는 것에는 한계가 있음
+* CSS의 적절한 스타일과 레이아웃을 조절하는 방법을 통해 사용자가 정보를 습득하기 편리하 형태로 변경해야 함
+
+### block
+* 자신의 부모요소 너비를 전부 차지
+* 새로운 블록을 추가할 시, 다음 라인에 개행되어 추가
+
+### inline
+* 컨텐츠 영역만큼만 너비 차지
+* 부모의 최대 너비까지 나란히 위치
+* 부모의 너비를 넘긴 경우, 개행하여 배치
+
+## 2. Flex 용어
+### flex
+* 요소들을 행, 열 단위로 정렬하기 위한 1차원 레이아웃
+* 부모의 요소에 **display: flex** 지정
+```CSS
+.parent {
+  display: flex;
+}
+```
+
+### flex 용어
+* flex container: flex item들의 배치나 정렬을 담당하는 역할, 속성값들을 활용
+  * flex-direction
+  * flex-wrap
+  * justify-content
+  * align-items
+  * align-content
+* flex item: flex container의 자식 요소에 해당하는 요소
+  * flex
+  * flex-flow
+  * flex-shrink
+  * flex-basis
+  * order
+  * align-self
+* main axis: flex item들의 주요 배치 방법과 정렬 등의 기준점이 되는 축, 주축
+  * main start를 기점으로 main end 방향으로 아이템들이 배치
+* cross axis: flex item들의 부차적인 정렬에 대한 기준을 담당
+  * cross start를 기점으로 cross end 방향 기준 정렬 가능
+
+## 3. Flex 속성
+### flex-direction
+* main axis 방향을 결정하는 속성
+* row: main 축이 row 방향으로 설정, item들이 row 방향 기준으로 나열(가로)
+* column: main 축이 column 방향으로 설정, item들이 column 방향 기준으로 나열(세로)
+* -reverse: main 시작점이 반대방향에서 시작하는 구조
+
+
+# Reference
+
+[[10분 테코톡] 콜린의 Flex Layout](https://www.youtube.com/watch?v=JQ0jO3B43YQ)
