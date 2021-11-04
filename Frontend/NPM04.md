@@ -1,6 +1,6 @@
 # Node.js와 NPM
 
-**본 내용은 인프런 캡틴판교님의 프론트엔드 개발자를 위한 웹팩 강의를 토대로 작성하였습니다.**
+**본 내용은 인프런 장기효(캡틴판교)님의 프론트엔드 개발자를 위한 웹팩 강의를 토대로 작성하였습니다.**
 
 
 
@@ -63,5 +63,5 @@ npm install [라이브러리 명]
 
 # Reference
 
-[[인프런]프론트엔드 개발자를 위한 웹팩)](https://www.inflearn.com/course/%ED%94%84%EB%9F%B0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%9B%B9%ED%8C%A9/dashboard)
+[[인프런]프론트엔드 개발자를 위한 웹팩](https://www.inflearn.com/course/%ED%94%84%EB%9F%B0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%9B%B9%ED%8C%A9/dashboard)
 
