@@ -1,5 +1,3 @@
-
-
 # Linear Search & Binary Search
 
 **본 내용은 노마드 코더님의 강의를 토대로 작성하였습니다.**
@@ -36,3 +34,4 @@
 # Reference
 
 [[노마드코더] 검색 알고리즘? 기초개념 잡아드림. 10분 순삭](https://www.youtube.com/watch?v=9TyyMtlk5i4&list=PL7jH19IHhOLMdHvl3KBfFI70r9P0lkJwL)
+
