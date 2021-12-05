@@ -9,7 +9,7 @@
 ### 저자 마틴 파울러는?
 
 * ThoughtWorks의 수석 과학자
-* 제어 역전(Inversion of Control)과 의존성 주읩(Dependency Injection)용어를 대중화시킨 장본인
+* 제어 역전(Inversion of Control)과 의존성 주입(Dependency Injection)용어를 대중화시킨 장본인
 
 
 
