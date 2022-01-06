@@ -1,4 +1,4 @@
-# Refactoring - 기본적인 리팩터링
+# Refactoring - 기본적인 리팩터링(1)
 
 **본 내용은 마틴 파울러의 Refactoring 2판을 토대로 작성되었습니다.**
 
