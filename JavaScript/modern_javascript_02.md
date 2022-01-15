@@ -44,3 +44,77 @@
   * 처음부터 렌더링해야해서 깜빡이는 현상과 성능에서도 불리
 * Ajax는 서버로부터 필요한 데이터만 전송받아 변경해야 하는 부분만 한정적으로 렌더링이 가능하게 함
   * 데스크톱 애플리케이션과 유사한 빠른 성능과 부드러운 화면 전환이 가능해짐
+
+
+
+### 2.3.2 jQuery
+
+* DOM(Document Object Model)을 더욱 쉽게 제어
+* 크로스브라우징 이슈를 어느정도 해결
+* JS보다 더 배우기 쉽고 직관적
+
+
+
+### 2.3.3 V8 JavaScript 엔진
+
+* 더욱 빠르게 동작하는 JavaScript 엔진
+* 데스크톱 애프리케이션과 유사한 사용자 경험(UX: User Experience) 제공
+* 웹 서버에서 수행되던 로직들이 대거 클라이언트(브라우저)로 이동
+* 웹 애플리케이션 개발에서 프론트엔드 영역이 주목받게 되는 계기로 작용
+
+
+
+### 2.3.4 Node.js
+
+* V8 JavaScript 엔진으로 빌드된 JavaScript 런타임 환경(Runtime Enviroment)
+* 브라우저의 JavaScript 엔진에서만 동작하던 JavaScript를 브라우저 이외의 환경에서도 동작할 수 있도록한 실행 환경
+* 주로 서버 사이드 애플리케이션 개발에 사용
+* Moduels, File System, HTTP 등 Built-in API를 제공
+* 프론트엔드와 백엔드 영역에서 JavaScript를 사용 가능
+* 비동기 I/O 지원
+* 단일 스레드(Single Thread), 이벤트 루프 기반 동작
+  * 요청 처리 성능이 좋음
+* 데이터를 실시간 처리하기 위해 I/O가 빈번하게 발생하는 SPA(Sigle Page Application)에 적합
+  * CPU 사용률이 높은 애플리케이션에는 권장하지 않음
+* 이로 인해, JavaScript는 **크로스 플랫폼**을 위한 가장 중요한 언어로 주목
+
+
+
+### 2.3.5 SPA 프레임워크
+
+* 모던 웹 애플리케이션은 데스크톱 애플리케이션과 비교해도 손색없는 성능과 사용장 경험을 제공하는 것이 필수가 됨
+  * 개발 규모, 복잡도 상승
+* CBD(Component Based Development) 방법론을 기반으로하는 SPA(Single Page Application)가 대중화
+  * Angular, React, Vue.js, Svelte
+
+
+
+## 2.4 자바스크립트와 ECMAScript
+
+* ECAMAScript
+  * JavaScript 표준 사양 ECMA-262
+* 프로그래밍 언어의 값, 타입, 객체와 프로퍼티, 표준 빌트인 객체(Standard Built-in Object)등 핵심 문법 규정
+* 브라우저 제조사는 ECMAScript  사양을 준수하여 JavaScript 엔진을 구현
+* **JavaScript는** 아래를 아우르는 개념
+  * 프로그래밍 언어로서 기본 뼈대를 이루는 ECMAScript
+  * 브라우저가 별도 지원하는 클라이언트 사이드 Web API
+    * DOM, BOM, Canvas, XMLHttpRequest, fetch, Web Storage 등
+* Web API는 W3C(World Wide Web Consortium)에서 별도의 사양으로 관리
+
+
+
+## 2.5 자바스크립트의 특징
+
+* **웹 브라우저에서 동작하는 유일한 프로그래밍 언어**
+* 기존 프로그래밍 언어에서 많은 영향
+* **인터프리터 언어(Interpreter Language)**
+  * 개발자가 별도의 컴파일 작업을 수행하지 않음
+  * 모던 자바스크립트 엔진은 인터프리터와 컴파일러의 장점을 결합해 처리속도가 느린 인터프리터의 단점을 해결
+  * 소스코드를 즉시 실행하고 컴파일러는 빠르게 동작하는 머신 코드를 생성하고 최적화
+* **멀티 패러다임 프로그래밍 언어**
+  * 명령형(Imperative)
+  * 함수형(Functional)
+  * 프로토타입 기반(Prototype-based) 객체지향 프로그래밍 지원
+
+
+
