@@ -1,5 +1,3 @@
-
-
 # Vue.js - 초기 진입 페이지 설정, Fall Back Router, History Mode
 
 **본 내용은 인프런 장기효(캡틴판교)님의 Vue.js 끝장내기 - 실무에 필요한 모든 것 강의를 토대로 작성하였습니다.**
