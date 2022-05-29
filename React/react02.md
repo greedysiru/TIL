@@ -42,3 +42,6 @@ const element = <h1>hello world</h1>
 * DOM을 원하는 상태로 만드는데 필요한 경우에만 DOM을 업데이트
 * **특정 시점에 UI가 어떻게 보일지 고민하기**
 
+# Reference
+
+[React 공식 문서](https://ko.reactjs.org/)
