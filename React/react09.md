@@ -92,10 +92,11 @@ class Header extends React.Component {
 * 컴포넌트는 자신의 state를 자식 컴포넌트에 props로 전달할 수 있음
   * 하향식(top-down) 또는 단방향식 데이터 흐름이라고 함
 * 모든 state는 특정한 컴포넌트가 소유하고 있음
-* state로부터 파생된 UI 또는 데이터는 오직 아래에 있는 컴포넌트에만 영향을 미침
+* state로부터 파생된 UI 또는 데이터는 오직 아래에 있는 컴포넌트에만 영향을 미침5
 
 
 
 # Reference
 
 [React 공식 문서](https://ko.reactjs.org/)
+
