@@ -52,7 +52,7 @@ function solution(lottos, win_nums) {
 
 이중 for문으로 주어진 lottos, win_nums배열을 순회하며 맞춰가면 되는 문제.
 
-filter메서드를 쓰면 더 우아할 것 같다.ㅇ
+filter메서드를 쓰면 더 우아할 것 같다.
 
 ## Reference
 
