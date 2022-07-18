@@ -1,10 +1,10 @@
-# Styled Components(3)
+# Styled Components(3) - Themes, createGlobalStyle
 
 **본 내용은 Nomad Coders - React JS 마스터클래스 강의를 토대로 작성하였습니다.**
 
 
 
-## Themes
+## 1. Themes
 
 * 모든 색상을 가지고 있는 object
 * 프로젝트에 일관성 있는 스타일을 정의할 수 있음
@@ -79,6 +79,22 @@ function App() {
 
 export default App;
 ```
+
+
+
+## 2. createGlobalStyle
+
+* 전역 스코프의 스타일을 적용하는 styled component
+  * css Reset을 적용
+  * 폰트 등을 정의
+
+```React
+const GlobalStyle = createGlobalStyle`
+  // 전역 스타일 정의
+`;
+```
+
+
 
 
 
