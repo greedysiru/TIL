@@ -1,6 +1,6 @@
 
 
-# AWS Amplify(1)
+# AWS Amplify
 
 
 
