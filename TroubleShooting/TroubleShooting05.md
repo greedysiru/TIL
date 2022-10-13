@@ -1,4 +1,4 @@
-# useCallback과 클로져
+# useCallback과 클로져 그리고 의존성 배열
 
    
 
