@@ -1,4 +1,4 @@
-# dependencies vs. devDependencies vs. peerDependencies
+# dependencies vs. devDependencies
 
 
 
