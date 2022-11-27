@@ -62,12 +62,13 @@ return {response !== undefined? <h1>response.name</h1> : null};
 
 ## 4. 결론
 
-타입 단언은 TypeScript의 깐깐한 타입 에러를 넘어가기에는 좋은 방법으로 보일 수 있다. 하지만, 이러한 조치는 물빠진 독을 손으로 막는 것과 다름없다고 생각한다. 에러라고 하여, 무조건 좋지 않은 것이 아니라 더 나은 방향을 제시하는 실마리라고 인지해야한다. 지리멸렬하고 생산성을 낮추는 것이 아닌, 견고한 애플리케이션을 만들게끔하는 이정표임을 명심하자.
+타입 단언은 TypeScript의 깐깐한 타입 에러를 넘어가기에는 좋은 방법으로 보일 수 있다. 하지만, 이러한 조치는 물빠진 독을 손으로 막는 것과 다름없다고 생각한다. 타입 가드와 같은 기법을 사용하여 런타임 에러를 방지하자.
+ 에러라고 하여, 무조건 좋지 않은 것이 아니라 더 나은 방향을 제시하는 실마리라고 인지해야한다. 지리멸렬하고 생산성을 낮추는 것이 아닌, 견고한 애플리케이션을 만들게끔하는 이정표임을 명심하자.
 
    
 
    ## Reference
 
-   * [React useCallback Hook Api](https://ko.reactjs.org/docs/hooks-reference.html#usecallback)
-   * [React Hook Motivation](https://ko.reactjs.org/docs/hooks-intro.html#motivation)
+   * [TypeScript](https://www.typescriptlang.org/ko/docs/handbook/2/everyday-types.html)
+   * [React](https://reactjs.org/docs/react-dom-client.html#createroot)
 
