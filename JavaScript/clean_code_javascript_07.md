@@ -56,5 +56,3 @@ undefined + 10 // NaN
 
 [[Udemy] 클린코드 자바스크립트 - Poco Jang](https://www.udemy.com/course/clean-code-js/)
 
-[[MDN] Object.prototype.toString()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
-
