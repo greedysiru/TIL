@@ -26,7 +26,7 @@ const callMyCat = (catName = '고양아') => {
 
 // 또는 아래처럼 표현할 수 있음
 function callMyCat(catName) {
-  catName = catName | '고양아';
+  catName = catName || '고양아';
 	console.log(`${catName} 이리와`);
 }
 ```
