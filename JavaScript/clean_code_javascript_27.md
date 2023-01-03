@@ -57,4 +57,3 @@ console.log(cats); // cats []
 ## Reference
 
 [[Udemy] 클린코드 자바스크립트 - Poco Jang](https://www.udemy.com/course/clean-code-js/)
-
