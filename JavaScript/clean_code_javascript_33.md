@@ -1,4 +1,4 @@
-# 클린코드 자바스크립트 - 분기 다루기(map vs forEach)
+# 클린코드 자바스크립트 - 배열 다루기(map vs forEach)
 
 
 
