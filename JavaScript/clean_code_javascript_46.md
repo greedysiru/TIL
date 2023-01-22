@@ -1,4 +1,4 @@
-# 클린코드 자바스크립트 - 함수 다루기(Defatul Value)
+# 클린코드 자바스크립트 - 함수 다루기(Default Value)
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-## Defatul Value
+## Default Value
 
 * 함수가 받는 매개변수에 기본값을 넣어야 안전하게 함수를 사용 가능
 * Error 방지
