@@ -1,4 +1,4 @@
-# Understanding TypeScript(8) - Working with Enums
+# Understanding TypeScript(9) - Working with Enums
 
 **본 내용은 Udemy의 Understanding TypeScript 강의를 토대로 작성하였습니다.**
 
