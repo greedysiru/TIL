@@ -38,6 +38,26 @@ const combine = (
 
 
 
+### Obejct Type Alias
+
+* Object 또한 Type Alias 할당이 가능
+
+```TypeScript
+type Cat = {
+  name: string,
+  age: number,
+  isVaccinated: boolean;
+}
+
+const siru: Cat = {
+  name: 'siru',
+  age: 8,
+  isVaccinated: true,
+}
+```
+
+
+
 
 # Reference
 
