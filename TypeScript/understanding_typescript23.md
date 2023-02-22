@@ -1,4 +1,4 @@
-# Understanding TypeScript(20) - Understanding TypeScript Core Libs
+# Understanding TypeScript(23) - Understanding TypeScript Core Libs
 
 **본 내용은 Udemy의 Understanding TypeScript 강의를 토대로 작성하였습니다.**
 

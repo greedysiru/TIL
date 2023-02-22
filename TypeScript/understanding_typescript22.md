@@ -1,4 +1,4 @@
-# Understanding TypeScript(20) - Setting a Compilation Target
+# Understanding TypeScript(22) - Setting a Compilation Target
 
 **본 내용은 Udemy의 Understanding TypeScript 강의를 토대로 작성하였습니다.**
 
