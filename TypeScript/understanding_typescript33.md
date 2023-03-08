@@ -1,4 +1,4 @@
-# Understanding TypeScript(31) - Shorthand Initialization
+# Understanding TypeScript(33) - Shorthand Initialization
 
 **본 내용은 Udemy의 Understanding TypeScript 강의를 토대로 작성하였습니다.**
 
