@@ -1,4 +1,4 @@
-# Understanding TypeScript(31) - "private" and "public" Access Modifiers
+# Understanding TypeScript(32) - "private" and "public" Access Modifiers
 
 **본 내용은 Udemy의 Understanding TypeScript 강의를 토대로 작성하였습니다.**
 
