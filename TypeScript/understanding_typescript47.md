@@ -25,7 +25,7 @@ class Person implements Greetable {
   
   // 선택적 매개변수를 적용
   constructor(n?: string) {
-    if (outputN) {
+    if (n) {
       this.name = n;
     }
   }
