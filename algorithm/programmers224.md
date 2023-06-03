@@ -1,0 +1,24 @@
+
+
+# [프로그래머스] 더 크게 합치기
+
+**본 게시물은 프로그래머스의 연습 문제 풀이입니다. 저작권은 (주) 그랩에게 있습니다**
+
+## 자바스크립트 코드
+
+
+
+```JavaScript
+const solution = (a, b) => {
+    const ab = parseInt(`${a}${b}`);
+    const ba = parseInt(`${b}${a}`);
+    return ab >= ba? ab : ba;    
+}
+```
+
+
+
+## Reference
+
+[프로그래머스](https://programmers.co.kr)
+
